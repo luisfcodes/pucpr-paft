@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block styles %} <link rel="stylesheet" href="/static/css/delete.css"> {% endblock styles %}
+{% block title %} PROmovie | Deletar Filme {% endblock title %}
+{% block content %}
+    <div class="container">
+      <h1>Deletar filme</h1>
+      <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+        <img src="../../../media/{{movie.banner}}" alt="{{movie.title}}" class="banner">
+        <p>Deseja realmente excluir o filme "<span class="film_title">{{movie.title}}</span>"?</p>
+        <div class="content_buttons">
+          <button type="submit" class="button_confirm">Confirmar</button>
+          <a href="{{ movie.get_absolute_url }}">
+            <button type="button" class="button_cancel">Cancelar</button>
+          </a>
+        </div>
+      </form>
+    </div>
+{% endblock content %}

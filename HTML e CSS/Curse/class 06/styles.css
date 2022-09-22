@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #181818;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.belgium {
+    text-align: center;
+}
+
+.belgium div {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+
+.black {
+    
+    background-color: black;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: darkblue;
+}
+
+.white {
+    background-color: white;
+}
+
+.germany {
+    text-align: center;
+}
+
+.germany div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+}
+
+.france {
+    text-align: center;
+}
+
+.france div {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}

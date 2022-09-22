@@ -1,0 +1,16 @@
+table {
+    border: solid 1px #fff;
+}
+
+th, td {
+    padding: 0.2rem;
+    text-align: center;
+}
+
+tr td:first-child {
+    font-weight: 700;
+}
+
+caption {
+    margin-bottom: 1rem;
+}

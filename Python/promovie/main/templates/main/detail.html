@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block styles %} <link rel="stylesheet" href="/static/css/detail.css"> {% endblock styles %}
+{% block title %} PROmovie | {{ movie.title }} {% endblock title %}
+{% block content %}
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="container">
+        <img src="../../../media/{{movie.banner}}" alt="{{movie.title}}" class="banner">
+        <div class="content">
+            <h1>{{ movie.title }}</h1>
+            <div class="content_buttons">
+                <a href="{{ movie.get_absolute_url_update }}">
+                    <button class="button_edit">
+                        <img src="/static/images/edit.svg" alt="ícone de editar">
+                        <span>Editar Filme</span>
+                    </button>
+                </a>
+                <a href="{{ movie.get_absolute_url_delete }}">
+                    <button class="button_remove">
+                        <img src="/static/images/trash.svg" alt="ícone de lixeira">
+                        <span>Deletar Filme</span>
+                    </button>
+                </a>
+            </div>
+            <ul class="content_list">
+                <li>{{ movie.description }}</li>
+            </ul>
+        </div> 
+    </div>
+{% endblock content %}

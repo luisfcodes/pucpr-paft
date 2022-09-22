@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.container h1 {
+  font-size: 4rem;
+  color: #fbbf24;
+}
+
+.film_title {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.banner {
+  width: 200px;
+  height: 300px;
+}
+
+.content_buttons {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.content_buttons button {
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  border: none;
+}
+
+.content_buttons button:hover {
+  transform: scale(0.98);
+}
+
+.button_confirm {
+  background-color: #16a34a;
+  color: #fff;
+}
+
+.button_cancel {
+  background-color: #dc2626;
+  color: #fff;
+}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block styles %} <link rel="stylesheet" href="/static/css/forms.css"> {% endblock styles %}
+{% block title %} PROmovie | Editar Filme {% endblock title %}
+{% block content %}
+  <div class="container">
+    <h1>Editar filme</h1>
+    <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+      {{form.as_p}}
+      <input class="button_submit" type="submit" value="Salvar">
+    </form>
+  </div>
+  <script>
+    document.querySelectorAll("[for=id_banner]")[0].textContent = 'Adicione uma imagem'
+    document.querySelectorAll("[for=id_title]")[0].textContent = 'Título'
+    document.querySelectorAll("[for=id_description]")[0].textContent = 'Descrição'
+  </script>
+{% endblock content %}

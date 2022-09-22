@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+    color: #fbbf24;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+.container input[type="text"] {
+    padding: 0.2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    outline-color: #181818;
+}
+
+.container textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    outline-color: #181818;
+}
+
+.container form p {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.container form p label {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.button_submit {
+    background-color: #fbbf24;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button_submit:hover{
+    transform: scale(0.98);
+}

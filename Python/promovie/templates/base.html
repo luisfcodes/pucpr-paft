@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  {% block styles %} {% endblock styles %}
+  <title>{% block title %} {% endblock title %}</title>
+</head>
+<body>
+  <header>
+      <div>
+        <a href="/"><img src="{% static 'images/logo.png' %}" alt="Logo" class="logo"></a>
+      </div>
+      <a href="{% url 'new' %}">
+        <button class="button_newFilm">Adicionar Filme</button>
+      </a>
+  </header>
+  <main>
+    {% block content %} {% endblock content %}
+  </main>
+  <footer>
+    <div class="footer_container">
+      <div class="footer_icons">
+        <a href="https://github.com/luisfcodes" target="_blank">
+          <button>
+            <img src="{% static 'images/github_icon.png' %}" alt="Ícone do Github">
+          </button>
+        </a>
+        <a href="https://www.linkedin.com/in/luisfcodes/" target="_blank">
+          <button>
+            <img src="{% static 'images/linkedin_icon.png' %}" alt="Ícone do Linkedin">
+          </button>
+        </a>
+        <a href="https://www.instagram.com/luisfcodes/" target="_blank">
+          <button>
+            <img src="{% static 'images/instagram_icon.png' %}" alt="Ícone do Instagram">
+          </button>
+        </a>
+        <a href="https://twitter.com/luisfcodes" target="_blank">
+          <button>
+            <img src="{% static 'images/twitter_icon.png' %}" alt="Ícone do Twitter">
+          </button>
+        </a>
+        <a href="mailto:luis.silva9902@gmail.com?" target="_blank">
+          <button>
+            <img src="{% static 'images/gmail_icon.png' %}" alt="Ícone do Gmail">
+          </button>
+        </a>
+      </div>
+      <p>Copyright © 2022-2022 Luis Fernando da Silva - Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>

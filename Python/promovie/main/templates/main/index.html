@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block styles %} <link rel="stylesheet" href="/static/css/index.css"> {% endblock styles %}
+{% block title %} PROmovie | Home {% endblock title %}
+{% block content %} 
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {% if latest_movie_list %}
+        <ul>
+            {% for movie in latest_movie_list %}
+            <li class="movie_item">
+                <a href="{{ movie.get_absolute_url }}">
+                    <img src="../../../media/{{movie.banner}}" alt="{{ movie.title }}" class="movie_banner">
+                    <p>{{ movie.title }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No movies are available.</p>
+    {% endif %}
+{% endblock content %}
