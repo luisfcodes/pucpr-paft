@@ -1,0 +1,32 @@
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  h1 {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+
+    span {
+      color: var(--primary-color);
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    max-width: 1024px;
+
+    img {
+      margin-top: 3rem;
+      width: calc(100vw - 20px);
+    }
+  }
+}

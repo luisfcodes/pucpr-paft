@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --dark: #181818;
+    --white: #fff;
+
+    --gray-100: #EDF2F7;
+    --gray-300: #CBD5E0;
+    --gray-500: #718096;
+    --gray-700: #2D3748;
+    --gray-900: #171923;
+
+    --primary-color: #3182CE;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 1rem;
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+
+    &:active {
+        color: var(--primary-color);
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+// Header Styles
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+
+            a {
+                color: var(--gray-100);
+
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+
+            button {
+                padding: 0.5rem 1rem;
+                border: 0;
+                border-radius: 4px;
+                font-size: 1rem;
+                font-weight: bold;
+                background-color: var(--primary-color);
+                color: var(--dark);
+                text-transform: uppercase;
+                transition: all 0.2s;
+
+                &:hover {
+                    transform: scale(0.98);
+                }
+            }
+        }
+    }
+}
+
+
+.header_logo {
+    a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            height: 100px;
+        }
+
+        span {
+            color: var(--primary-color);
+        }
+    }
+}
+
+// Footer Styles
+
+footer {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    padding: 1.5rem;
+}
