@@ -1,0 +1,88 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #171923;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  text-align: start;
+}
+
+.container_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.title_main {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.title_main span {
+  color: #3182CE;
+}
+
+.content_main {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card_container {
+  max-width: 200px;
+  min-height: 350px;
+  max-height: 400px;
+  background-color: #1A365D;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.card_banner{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+}
+
+.card_container a{
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.card_container a:hover{
+  filter: brightness(0.8);
+}
+
+.card_content {
+  padding: 0 1rem 0.1rem 1rem;
+}
+
+.card_content span {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: justify;
+}
+
+.card_content p {
+  margin-top: 0.4rem;
+}

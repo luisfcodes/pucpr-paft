@@ -4,10 +4,27 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.backLink {
+  padding: 0.5rem 1rem;
+  background-color: #3182CE;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  align-self: flex-end;
+  margin-right: 16px;
+  transition: all 0.2s;
+}
+
+.backLink:hover {
+  filter: brightness(0.9);
 }
 
 .content {
-  max-width: 1280px;
   display: flex;
   gap: 3rem;
   padding: 0 1rem;

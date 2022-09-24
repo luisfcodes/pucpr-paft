@@ -9,6 +9,7 @@ body{
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #171923;
 }
 
 main {
@@ -18,7 +19,7 @@ main {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
 .logo {

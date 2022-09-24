@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Projetos SALA | Home</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1>Faça a reserva do seu <span>quarto ideal</span>.</h1>
+      <form class="form_container">
+        <label for="name">Nome Completo</label>
+        <input type="text" id="name" maxlength="80" required />
+
+        <label for="dateOfBirth" class="margin_top">Data de Nascimento</label>
+        <input type="date" id="dateOfBirth" required />
+
+        <label for="address" class="margin_top">Endereço</label>
+        <input type="text" id="address" maxlength="100" required />
+
+        <label for="email" class="margin_top">E-mail</label>
+        <input type="email" id="email" required />
+
+        <label for="phone" class="margin_top">Telefone</label>
+        <input type="tel" id="phone" placeholder="(XX) XXXXX-XXXX" required />
+
+        <label for="loyaltyNumber" class="margin_top">Número de Fidelidade</label>
+        <input type="number" id="loyaltyNumber" />
+
+        <label for="entryDate" class="margin_top">Data de Entrada</label>
+        <input type="date" id="entryDate" required />
+
+        <fieldset class="margin_top">
+          <legend>Tipo de viagem:</legend>
+
+          <div>
+            <input type="radio" id="personalTrip" name="trips" value="personalTrip" checked>
+            <label for="personalTrip">Pessoal</label>
+          </div>
+
+          <div>
+            <input type="radio" id="workTravel" name="trips" value="workTravel">
+            <label for="workTravel">A trabalho</label>
+          </div>
+
+          <div>
+            <input type="radio" id="vacationTrip" name="trips" value="vacationTrip">
+            <label for="vacationTrip">Férias</label>
+          </div>
+        </fieldset>
+
+        <label for="numberOfNights" class="margin_top">Número de Noites</label>
+        <input type="number" id="numberOfNights" />
+
+        <fieldset class="margin_top">
+          <legend>Tipo de quarto:</legend>
+
+          <div>
+            <input type="radio" id="standard" name="bedrooms" value="standard" checked>
+            <label for="standard">Standard (01 Cama de casal)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="executive" name="bedrooms" value="executive">
+            <label for="executive">Executivo (02 Camas de casais e suíte)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="deluxe" name="bedrooms" value="deluxe">
+            <label for="deluxe">Deluxe (03 Camas de casais, suíte e piscina interna)</label>
+          </div>
+        </fieldset>
+
+        <label for="numberOfPeople" class="margin_top">Número de pessoas</label>
+        <input type="number" id="numberOfPeople" required />
+
+        <label for="numberOfChildren" class="margin_top">Número de crianças</label>
+        <input type="number" id="numberOfChildren" required />
+
+        <fieldset class="fieldset_content">
+          <input type="checkbox" id="specialRequirements" name="specialRequirements">
+          <label for="specialRequirements">Requerimentos especiais?</label>
+        </fieldset>
+
+        <fieldset class="margin_top">
+          <legend>Forma de pagamento:</legend>
+
+          <div>
+            <input type="radio" id="money" name="formOfPayment" value="money" checked>
+            <label for="money">Dinheiro</label>
+          </div>
+
+          <div>
+            <input type="radio" id="creditCard" name="formOfPayment" value="creditCard">
+            <label for="creditCard">Cartão de crédito</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset_content">
+          <input type="checkbox" id="shuttleNeeded" name="shuttleNeeded">
+          <label for="shuttleNeeded">Necessidade de shuttle para aeroporto?</label>
+
+          <h4>Caso sim, preencha abaixo:</h4>
+
+          <div class="shuttleNeededDescription">
+            <label for="departureDate">Ida</label>
+            <input type="datetime-local" id="departureDate">
+
+            <label for="returnDate">Volta</label>
+            <input type="datetime-local" id="returnDate">
+
+            <label for="flightNumber">Número do voo</label>
+            <input type="number" id="flightNumber">
+          </div>
+
+        </fieldset>
+
+        <button class="button_submit" type="button">Reservar</button>
+
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
