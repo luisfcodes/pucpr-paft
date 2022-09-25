@@ -52,6 +52,23 @@ a {
     padding: 1rem;
 }
 
+.backLink {
+    padding: 0.5rem 1rem;
+    background-color: #3182CE;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-right: 16px;
+    transition: all 0.2s;
+    color: #fff;
+    text-decoration: none;
+}
+
+.backLink:hover {
+    filter: brightness(0.9);
+}
+
 .sidebar {
     width: 200px;
     background-color: red;
@@ -109,4 +126,5 @@ a {
     text-align: center;
     padding: 20px 0px;
     font-weight: bold;
+    color: #fff;
 }

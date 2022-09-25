@@ -9,6 +9,10 @@ body {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     height: 100vh;
     max-width: 1140px;
@@ -20,6 +24,22 @@ body {
     gap: 1rem;
     align-items: center;
 }
+
+.backLink {
+    padding: 0.5rem 1rem;
+    background-color: #3182CE;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-right: 16px;
+    transition: all 0.2s;
+    color: #fff;
+}
+  
+  .backLink:hover {
+    filter: brightness(0.9);
+  }
 
 .title-h1 {
     text-transform: uppercase;
