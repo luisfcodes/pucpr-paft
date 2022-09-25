@@ -41,6 +41,15 @@ button {
   color: #3182CE;
 }
 
+.title_repo {
+  text-align: center;
+  margin-bottom: -8px;
+}
+
+.title_repo a {
+  color: #3182CE;
+}
+
 .content_main {
   margin-top: 2rem;
   display: flex;
