@@ -17,6 +17,11 @@
     }
   }
 
+  .home_subtitle {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
   section {
     display: flex;
     justify-content: space-between;

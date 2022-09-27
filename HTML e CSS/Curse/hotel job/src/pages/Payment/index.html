@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../assets/hotel.png" type="image/png">
     <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>LFS Hotel | Pagamento</title>
 </head>
@@ -50,7 +51,9 @@
                 </a>
               </li>
               <li>
-                <button>Login</button>
+                <a href="../SignUp/">
+                  <button id="buttonSignUp">Login</button>
+                </a>
               </li>
             </ul>
           </nav>
@@ -58,7 +61,47 @@
       </header>
 
       <main>
-        <h1>Main</h1>
+        <div class="container">
+
+          <form class="form_container">
+            <span class="form_warning">Reservas não canceladas no prazo e/ou no-show geram uma cobrança de uma diária. </span>
+            <fieldset class="form_pagaments">
+              <legend>Selecione uma forma de pagamento</legend>
+  
+              <div>
+                <input type="radio" id="money" name="pagaments" value="money" checked>
+                <label for="money">Dinheiro</label>
+              </div>
+  
+              <div>
+                <input type="radio" id="pix" name="pagaments" value="pix">
+                <label for="pix">PIX</label>
+              </div>
+
+              <div>
+                <input type="radio" id="debitCard" name="pagaments" value="debitCard">
+                <label for="debitCard">Cartão de débito</label>
+              </div>
+  
+              <div>
+                <input type="radio" id="creditCard" name="pagaments" value="creditCard">
+                <label for="creditCard">Cartão de crédito</label>
+              </div>
+            </fieldset>
+
+            <div class="form_inputs">
+              <label for="name">Nome</label>
+              <input type="text" id="name" required placeholder="Insira seu nome completo">
+            </div>
+
+            <div class="form_inputs">
+              <label for="numberOfRegister">Número do cadastro</label>
+              <input type="number" id="numberOfRegister" required placeholder="Insira o número da sua reserva">
+            </div>
+
+            <button class="form-button">Prosseguir</button>
+          </form>
+        </div>
       </main>
 
       <footer>
