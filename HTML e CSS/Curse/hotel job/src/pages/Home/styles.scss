@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  overflow-x: hidden;
 
   h1 {
     margin-top: 3rem;
@@ -26,7 +27,7 @@
 
     img {
       margin-top: 3rem;
-      width: calc(100vw - 20px);
+      width: 100vw;
     }
   }
 }
