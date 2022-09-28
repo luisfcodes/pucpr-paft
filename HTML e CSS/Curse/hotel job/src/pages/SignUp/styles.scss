@@ -91,3 +91,17 @@
   }
 
 }
+
+// Mobile
+
+@media only screen and (max-width: 640px) {
+  .main_container {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .form_options_links{
+    font-size: 0.8rem;
+  }
+}

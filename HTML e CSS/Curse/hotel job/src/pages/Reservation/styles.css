@@ -88,4 +88,42 @@
 }
 .main_container section .main_card:hover {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .main_container {
+    padding: 0 1rem;
+  }
+  .main_container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .main_container .reserve_button button {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  .main_container section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .main_container section .main_card {
+    max-width: 500px;
+  }
+  .main_container section .main_card .card_banner {
+    width: 100%;
+  }
+  .main_container section .main_card:hover {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 640px) {
+  .main_container h1 {
+    font-size: 1.5rem;
+  }
+  .main_container .reserve_button {
+    width: 50%;
+  }
+  .main_container section .main_card {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

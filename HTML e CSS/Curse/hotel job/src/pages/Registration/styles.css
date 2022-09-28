@@ -130,4 +130,26 @@
 }
 .form_button:hover {
   filter: brightness(0.9);
+}
+
+@media only screen and (max-width: 1024px) {
+  .col-3 {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .col-3 {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .col-3 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .form_inputs_group {
+    flex-direction: column;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

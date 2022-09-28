@@ -29,8 +29,12 @@
         </a>
       </div>
 
-      <nav>
-        <ul>
+      <nav id="header-nav" class="header-nav">
+        <button id="btn-mobile" class="header_btn_mobile">
+          <span class="hamburguer"></span>
+        </button>
+
+        <ul class="header_menu">
           <li>
             <a href="../Home">
               Home
@@ -67,7 +71,8 @@
       <p class="home_subtitle">Conosco sua única preocupação será em como aproveitar as férias da melhor maneira.</p>
 
       <section>
-        <img src="../../assets/banner.jpg" alt="Foto de uma fachada de hotel a noite, com piscina e cadeiras de praia.">
+        <img src="../../assets/banner.jpg" id="home-banner"
+          alt="Foto de uma fachada de hotel a noite, com piscina e cadeiras de praia.">
       </section>
     </div>
   </main>
@@ -75,6 +80,12 @@
   <footer>
     <span>Copyright © 2022-2022 LFS HOTEL - Todos os direitos reservados</span>
   </footer>
+
+  <script>
+    if (window.screen.width < 768) {
+      document.getElementById('home-banner').setAttribute('src', '../../assets/banner_mobile.jpg')
+    }
+  </script>
 </body>
 
 </html>

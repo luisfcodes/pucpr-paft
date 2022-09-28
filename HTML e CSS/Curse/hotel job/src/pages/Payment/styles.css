@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(103, 232, 249);
+  background: linear-gradient(90deg, rgb(103, 232, 249) 0%, rgb(147, 197, 253) 100%);
 }
 
 .form_container {
@@ -10,7 +12,6 @@
   max-width: 600px;
   width: 100%;
   border-radius: 8px;
-  border: 4px solid black;
   background-color: #111827;
   color: var(--white);
   display: flex;
@@ -67,4 +68,16 @@
 }
 .form-button:hover {
   filter: brightness(0.9);
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .form_container {
+    padding: 1rem;
+  }
+  .form_pagaments {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=styles.css.map */

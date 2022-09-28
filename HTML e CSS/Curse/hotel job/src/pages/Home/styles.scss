@@ -24,15 +24,36 @@
 
   section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    flex-direction: column;
-    max-width: 1024px;
 
     img {
       margin-top: 3rem;
       width: 100vw;
+    }
+  }
+}
+
+// Mobile
+
+@media only screen and (max-width: 640px) {
+  .main_container {
+  
+    padding: 0 1rem;
+
+    h1 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .home_subtitle {
+      text-align: center;
+    }
+  
+    section {
+  
+      img {
+        margin-top: 1rem;
+      }
     }
   }
 }

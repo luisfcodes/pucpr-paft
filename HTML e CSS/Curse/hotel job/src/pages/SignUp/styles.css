@@ -82,4 +82,15 @@
 }
 .form_options_container .form_options_links a:hover {
   filter: brightness(0.9);
+}
+
+@media only screen and (max-width: 640px) {
+  .main_container {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .form_options_links {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
