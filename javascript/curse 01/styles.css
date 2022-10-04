@@ -1,0 +1,108 @@
+.main_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card_container {
+  width: 350px;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card_title {
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--dark);
+  padding: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 350px;
+}
+
+.result {
+  color: var(--gray-300);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.resultNumber {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: -15px;
+  padding: 0 0.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.card_inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card_inputs label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--gray-300);
+}
+
+.card_input {
+  width: 80%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--gray-900);
+  font-weight: bold;
+  outline-color: black;
+  outline: transparent;
+  border: 1px solid var(--gray-700);
+  border-radius: 4px;
+  color: var(--primary-color);
+}
+
+.card_input::placeholder{
+  color: var(--gray-700);
+  opacity: 1; 
+}
+
+.card_button {
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--dark);
+  font-size: 1.3rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card_button:hover {
+  filter: brightness(0.9);
+}

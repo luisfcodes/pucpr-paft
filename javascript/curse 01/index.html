@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 01 - Javascript</title>
-    <script src="./index.js"></script>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 01 - Javascript</title>
+  <link rel="shortcut icon" href="../assets/javascript_favicon.png" type="image/png">
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./index.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    
+  <main>
+    <div class="main_container" id="main_container">
+      <div class="card_container">
+        <h2 class="card_title">Calculadora de IMC</h2>
+        <div class="card_content" id="card_content_calcImc">
+          <p id="calcImcResult" class="result"></p>
+          <div class="card_inputs">
+            <label for="weight">Informe seu peso (kg)</label>
+            <input type="number" id="weight" placeholder="ex: 98,5" class="card_input">
+          </div>
+          <div class="card_inputs">
+            <label for="height">Informe sua altura (cm)</label>
+            <input type="number" id="height" placeholder="ex: 160" class="card_input">
+          </div>
+          <button class="card_button" onclick="calcIMC()">Calcular</button>
+        </div>
+      </div>
+      <div class="card_container">
+        <h2 class="card_title">Conjectura de Collatz</h2>
+        <div class="card_content" id="card_content_calcCollatz">
+          <p id="calcCollatzResult" class="result"></p>
+          <div class="card_inputs">
+            <label for="numberSelected">Escolha um número</label>
+            <input type="number" id="numberSelected" placeholder="ex: 150" class="card_input">
+          </div>
+          <button class="card_button" onclick="calcCollatz()">Calcular</button>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>
