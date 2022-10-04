@@ -106,3 +106,41 @@ input[type=number] {
 .card_button:hover {
   filter: brightness(0.9);
 }
+
+.resultNumberList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.resultNumberItemList {
+  background-color: var(--primary-color);
+  color: var(--dark);
+  border-radius: 8px;
+  padding: 0.2rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+.card_question {
+  padding: 0 1rem;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: var(--gray-300);
+}
+
+.resultHeight {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.calcHeightResultParagraph {
+  border-right: 2px solid var(--primary-color);
+  border-left: 2px solid var(--primary-color);
+  font-size: 1.7rem;
+  padding: 0 1rem;
+}

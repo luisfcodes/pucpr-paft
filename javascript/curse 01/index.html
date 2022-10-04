@@ -19,6 +19,9 @@
 
 <body>
   <main>
+    <a href="../index.html">
+      <button class="button_back_home">Voltar</button>
+    </a>
     <div class="main_container" id="main_container">
       <div class="card_container">
         <h2 class="card_title">Calculadora de IMC</h2>
@@ -44,6 +47,14 @@
             <input type="number" id="numberSelected" placeholder="ex: 150" class="card_input">
           </div>
           <button class="card_button" onclick="calcCollatz()">Calcular</button>
+        </div>
+      </div>
+      <div class="card_container">
+        <h2 class="card_title">Altura de Chico e Zé</h2>
+        <div class="card_content" id="card_content_calcHeightResult">
+          <p id="calcHeightResult" class="result resultHeight"></p>
+          <p class="card_question">Chico tem 1,50 metro e cresce 2 centímetros por ano, enquanto Zé tem 1,10 metro e cresce 3 centímetros por ano. Após quantos anos Zé ficaria maior que Chico?</p>
+          <button class="card_button" onclick="calcHeight()">Revelar</button>
         </div>
       </div>
     </div>
