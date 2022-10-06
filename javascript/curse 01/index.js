@@ -3,7 +3,7 @@ function calcIMC() {
   const weight = Number(document.getElementById('weight').value)
   const height = Number(document.getElementById('height').value)
 
-  const imc = ((weight / (height * 2)) * 100).toFixed(2)
+  const imc = ((weight / (height**2) * 100) * 100).toFixed(2)
 
   const obese = imc >= 30
 
