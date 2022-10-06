@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 02 - Javascript</title>
-    <script src="./index.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/javascript_favicon.png" type="image/png">
+  <title>Aula 02 - Javascript</title>
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./index.js"></script>
 </head>
+
 <body>
-    
+  <main>
+    <a href="../index.html">
+      <button class="button_back_home">Voltar</button>
+    </a>
+
+    <div class="main_container">
+
+      <div class="card_container">
+        <h2 class="card_title">Lista Positiva com Média</h2>
+        <div class="card_content" id="card_content">
+          <div id="resultsListPositiveAndAverage" class="results"></div>
+          <div class="card_inputs">
+            <label for="addNumber">Adicione um número a sua lista</label>
+            <div class="card_inputs_add">
+              <input type="number" id="addNumber" placeholder="ex: -15" class="card_input">
+              <button class="card_button card_button_add" onclick="addNewNumber()">+</button>
+            </div>
+          </div>
+          <button class="card_button card_button_add_calculator" onclick="resetCalcSumOfNumbersAndAverage()">Resetar</button>
+        </div>
+      </div>
+
+      <div class="card_container">
+        <h2 class="card_title">Lista Com Nome e Cor</h2>
+        <div class="card_content" id="card_content">
+          <div id="resultsListNamesAndColors" class="results"></div>
+          <div class="card_inputs">
+            <label for="addNewPerson">Insira o nome e a cor</label>
+            <div class="card_inputs_add">
+              <input type="text" id="addNewPerson" placeholder="ex: Fulano Beltrano" class="card_input card_input_addnewPerson">
+              <select id="colorSelect" class="card_input card_input_select">
+                <option value="" disabled selected>Selecionar</option>
+                <option value="branco">Branco</option>
+                <option value="negro">Negro</option>
+                <option value="pardo">Pardo</option>
+                <option value="outro">Outro</option>
+              </select>
+              <button class="card_button card_button_add" onclick="addNewPerson()">+</button>
+            </div>
+          </div>
+          <button class="card_button card_button_add_calculator" onclick="resetCalcSamplingPeopleByColor()">Resetar</button>
+        </div>
+      </div>
+
+      <div class="card_container">
+        <h2 class="card_title">Jogo de Advinhação</h2>
+        <div class="card_content card_content_guessingGame" id="card_content">
+          <h4 class="infoGuessingGame">Adivinhe o número sorteado entre <span>1</span> e <span>100</span>. Palpites fora deste intervalo será considerado desistência.</h4>
+          <div id="resultsGuessingGame" class="results"></div>
+          <div class="card_inputs">
+            <label for="addNewGuess">Insira seu palpite</label>
+            <div class="card_inputs_add">
+              <input type="number" id="addNewGuess" placeholder="ex: 25" class="card_input">
+              <button class="card_button card_button_add" id="addNewGuessButton" onclick="addNewGuess()">+</button>
+            </div>
+          </div>
+          <button class="card_button card_button_add_calculator" onclick="newGuessingGame()">Novo Jogo</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
 </body>
+
 </html>
