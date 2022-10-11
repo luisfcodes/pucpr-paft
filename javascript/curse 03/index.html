@@ -8,7 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../assets/javascript_favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../global.css">
   <link rel="stylesheet" href="styles.css">
@@ -25,8 +27,8 @@
       <div class="card_container">
         <h2 class="card_title"><span class="title_function"><span>function</span> mais<span>()</span></span></h2>
         <div class="card_content">
-                    
-            <pre>
+
+          <pre>
               <code>
                 <span class="omni_theme_comment_color">// Primeira sintaxe</span>
 
@@ -35,8 +37,8 @@
                 <span class="omni_theme_yellow_color">}</span>
               </code>
             </pre>
-            
-            <pre>
+
+          <pre>
               <code>
                 <span class="omni_theme_comment_color">// Segunda sintaxe</span>
 
@@ -45,8 +47,8 @@
                 <span class="omni_theme_yellow_color">}</span>
               </code>
             </pre>
-          
-            <pre>
+
+          <pre>
               <code>
                 <span class="omni_theme_comment_color">// Terceira sintaxe</span>
 
@@ -54,17 +56,72 @@
               </code>
             </pre>
 
-              <p id="calcMaisResult" class="result"></p>
+          <p id="calcMaisResult" class="result"></p>
 
-              <div class="calcSomaInputs">
-                <input type="number" id="calcSomaNumberOne" placeholder="00">
-                <span>+</span>
-                <input type="number" id="calcSomaNumberTwo" placeholder="00">
-              </div>
-           
-              <button type="submit" class="card_button" onclick="soma()">Calcular</button>
+          <div class="calcOmniThemeInputs">
+            <input type="number" id="calcSomaNumberOne" placeholder="00">
+            <span>+</span>
+            <input type="number" id="calcSomaNumberTwo" placeholder="00">
+          </div>
+
+          <button type="submit" class="card_button" onclick="soma()">Calcular</button>
         </div>
       </div>
+
+      <div class="card_container">
+        <h2 class="card_title"><span class="title_function"><span>function</span> menos<span>()</span></span></h2>
+        <div class="card_content">
+
+          <pre>
+              <code>
+                <span class="omni_theme_comment_color">// Caso seja passado apenas 1 parâmetro, retorne o valor negativo. Caso sejam passados 2, retorne a subtração dos dois.</span>
+
+                <span class="omni_theme_pink_color">function</span> <span class="omni_theme_green_color">menos</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">a</span>,<span class="omni_theme_orange_color"> b <span class="omni_theme_pink_color">=</span> <span class="omni_theme_cyan_color">false</span></span><span class="omni_theme_yellow_color">){</span>
+                  <span class="omni_theme_pink_color indentation">return</span> <span class="omni_theme_pink_color">!</span>b <span class="omni_theme_pink_color">?</span> a <span class="omni_theme_pink_color">*</span> <span class="omni_theme_pink_color">-</span><span class="omni_theme_cyan_color">1</span> <span class="omni_theme_pink_color">:</span> a <span class="omni_theme_pink_color">-</span> b
+                <span class="omni_theme_yellow_color">}</span>
+              </code>
+            </pre>
+
+          <p id="calcMenosResult" class="result"></p>
+
+          <div class="calcOmniThemeInputs">
+            <input type="number" id="calcMenosNumberOne" placeholder="00">
+            <span>-</span>
+            <input type="number" id="calcMenosNumberTwo" placeholder="00">
+          </div>
+
+          <button type="submit" class="card_button" onclick="menos()">Calcular</button>
+        </div>
+      </div>
+
+      <div class="card_container">
+        <h2 class="card_title"><span class="title_function"><span>function</span> eCrescente<span>()</span></span></h2>
+        <div class="card_content">
+
+          <pre>
+              <code style="font-size: 0.9rem;">
+                <span class="omni_theme_comment_color">// Crie uma função eCrescente que teste se a lista informada é ou não crescente.</span>
+
+                <span class="omni_theme_pink_color">function</span> <span class="omni_theme_green_color">eCrescente</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">list</span><span class="omni_theme_yellow_color">){</span>
+                  <span class="omni_theme_pink_color indentation">for(</span>i <span class="omni_theme_pink_color">=</span> <span class="omni_theme_cyan_color">1</span>; i <span class="omni_theme_pink_color"><</span> list.length; i<span class="omni_theme_pink_color">++){</span>
+                    <span class="omni_theme_pink_color indentation-2">if(</span>list<span class="omni_theme_yellow_color">[</span>i<span class="omni_theme_yellow_color">]</span> <span class="omni_theme_pink_color"><</span> list<span class="omni_theme_yellow_color">[</span>i <span class="omni_theme_pink_color">-</span> <span class="omni_theme_cyan_color">1</span><span class="omni_theme_yellow_color">]</span><span class="omni_theme_pink_color">)</span>
+                      <span class="omni_theme_pink_color indentation-3">return</span> <span class="omni_theme_yellow_color">'Lista Não Crescente'</span>
+                  <span class="omni_theme_pink_color indentation">}</span>
+                  <span class="omni_theme_pink_color indentation">return</span> <span class="omni_theme_yellow_color">'Lista Crescente'</span>
+                <span class="omni_theme_yellow_color">}</span>
+              </code>
+            </pre>
+
+          <p id="calcECrescenteResult" class="result"></p>
+
+          <div class="calcOmniThemeInputs calc_eCrescente_Input">
+            <input type="text" id="calcECrescenteList" placeholder="[1, 2, 3, 4, 5, 6, 7, 8]">
+          </div>
+
+          <button type="submit" class="card_button" onclick="eCrescente()">Verificar</button>
+        </div>
+      </div>
+
     </div>
   </main>
 </body>

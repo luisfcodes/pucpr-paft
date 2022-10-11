@@ -1,3 +1,7 @@
+.main_container {
+  align-items: flex-start;
+}
+
 .title_function {
   background-color: var(--omni-theme-background);
   font-family: 'Fira Code', monospace;
@@ -38,6 +42,10 @@
   color: var(--omni-theme-comment);
 }
 
+.omni_theme_cyan_color {
+  color: var(--omni-theme-cyan);
+}
+
 pre {
   background-color: var(--omni-theme-background);
   padding: 0 0.8rem;
@@ -55,7 +63,15 @@ pre .indentation {
   margin-left: 1rem;
 }
 
-.calcSomaInputs {
+pre .indentation-2{
+  margin-left: 2rem;
+}
+
+pre .indentation-3{
+  margin-left: 3rem;
+}
+
+.calcOmniThemeInputs {
   display: flex;
   align-items: center;
   width: 100%;
@@ -63,7 +79,7 @@ pre .indentation {
   gap: 1rem;
 }
 
-.calcSomaInputs input {
+.calcOmniThemeInputs input {
   max-width: 100px;
   background-color: var(--omni-theme-background);
   padding: 0.5rem;
@@ -75,7 +91,7 @@ pre .indentation {
   text-align: center;
 }
 
-.calcSomaInputs span {
+.calcOmniThemeInputs span {
   font-size: 2rem;
   font-weight: bold;
   color: var(--omni-theme-pink);
@@ -85,4 +101,8 @@ pre .indentation {
   margin-top: 0.5rem;
   color: var(--omni-theme-cyan);
   font-size: 2.25rem;
+}
+
+.calc_eCrescente_Input input {
+  max-width: 80%;
 }
