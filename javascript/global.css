@@ -7,6 +7,14 @@
   --gray-500: #737373;
   --gray-700: #404040;
   --gray-900: #171717;
+
+  --omni-theme-background: #191622;
+  --omni-theme-green: #67E480;
+  --omni-theme-pink: #FF79C6;
+  --omni-theme-yellow: #E7DE79;
+  --omni-theme-orange: #E89E64;
+  --omni-theme-comment: #483C67;
+  --omni-theme-cyan: #78D1E1;
 }
 
 * {

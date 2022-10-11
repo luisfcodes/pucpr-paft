@@ -3,12 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../assets/javascript_favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="styles.css">
   <script src="./index.js"></script>
-  <title>Document</title>
+  <title>Aula 03 - Javascript</title>
 </head>
 
 <body>
@@ -16,8 +21,50 @@
     <a href="../index.html">
       <button class="button_back_home">Voltar</button>
     </a>
-
     <div class="main_container">
+      <div class="card_container">
+        <h2 class="card_title"><span class="title_function"><span>function</span> mais<span>()</span></span></h2>
+        <div class="card_content">
+                    
+            <pre>
+              <code>
+                <span class="omni_theme_comment_color">// Primeira sintaxe</span>
+
+                <span class="omni_theme_pink_color">function</span> <span class="omni_theme_green_color">soma</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">a</span>,<span class="omni_theme_orange_color"> b</span><span class="omni_theme_yellow_color">){</span>
+                  <span class="omni_theme_pink_color indentation">return</span> a <span class="omni_theme_pink_color">+</span> b
+                <span class="omni_theme_yellow_color">}</span>
+              </code>
+            </pre>
+            
+            <pre>
+              <code>
+                <span class="omni_theme_comment_color">// Segunda sintaxe</span>
+
+                <span class="omni_theme_pink_color">const</span> <span class="omni_theme_green_color">soma</span> <span class="omni_theme_pink_color">=</span> <span class="omni_theme_pink_color">function</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">a</span>,<span class="omni_theme_orange_color"> b</span><span class="omni_theme_yellow_color">){</span>
+                  <span class="omni_theme_pink_color indentation">return</span> a <span class="omni_theme_pink_color">+</span> b
+                <span class="omni_theme_yellow_color">}</span>
+              </code>
+            </pre>
+          
+            <pre>
+              <code>
+                <span class="omni_theme_comment_color">// Terceira sintaxe</span>
+
+                <span class="omni_theme_pink_color">const</span> <span class="omni_theme_green_color">soma</span> <span class="omni_theme_pink_color">= </span> <span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">a</span>,<span class="omni_theme_orange_color"> b</span><span class="omni_theme_yellow_color">)</span> <span class="omni_theme_pink_color">=> </span> a <span class="omni_theme_pink_color">+</span> b
+              </code>
+            </pre>
+
+              <p id="calcMaisResult" class="result"></p>
+
+              <div class="calcSomaInputs">
+                <input type="number" id="calcSomaNumberOne" placeholder="00">
+                <span>+</span>
+                <input type="number" id="calcSomaNumberTwo" placeholder="00">
+              </div>
+           
+              <button type="submit" class="card_button" onclick="soma()">Calcular</button>
+        </div>
+      </div>
     </div>
   </main>
 </body>

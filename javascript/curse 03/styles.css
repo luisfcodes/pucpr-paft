@@ -1,0 +1,88 @@
+.title_function {
+  background-color: var(--omni-theme-background);
+  font-family: 'Fira Code', monospace;
+  padding: 0.2rem .8rem;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--omni-theme-green);
+}
+
+.title_function span:first-child {
+  color: var(--omni-theme-pink);
+}
+
+.title_function span:last-child {
+  color: var(--omni-theme-yellow);
+}
+
+/* Styles Omni Theme */
+
+.omni_theme_pink_color {
+  color: var(--omni-theme-pink);
+}
+
+.omni_theme_green_color {
+  color: var(--omni-theme-green);
+}
+
+.omni_theme_yellow_color {
+  color: var(--omni-theme-yellow);
+}
+
+.omni_theme_orange_color {
+  color: var(--omni-theme-orange);
+}
+
+.omni_theme_comment_color {
+  color: var(--omni-theme-comment);
+}
+
+pre {
+  background-color: var(--omni-theme-background);
+  padding: 0 0.8rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  white-space: pre-line;
+  width: 90%;
+}
+
+pre:first-child {
+  margin-top: 1rem;
+}
+
+pre .indentation {
+  margin-left: 1rem;
+}
+
+.calcSomaInputs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.calcSomaInputs input {
+  max-width: 100px;
+  background-color: var(--omni-theme-background);
+  padding: 0.5rem;
+  outline: transparent;
+  border: 0;
+  color: var(--omni-theme-cyan);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.calcSomaInputs span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--omni-theme-pink);
+}
+
+.result {
+  margin-top: 0.5rem;
+  color: var(--omni-theme-cyan);
+  font-size: 2.25rem;
+}
