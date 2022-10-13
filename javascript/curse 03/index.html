@@ -112,13 +112,75 @@
               </code>
             </pre>
 
-          <p id="calcECrescenteResult" class="result"></p>
+          <p id="calcECrescenteResult" style="font-size: 1.5rem;" class="result"></p>
 
-          <div class="calcOmniThemeInputs calc_eCrescente_Input">
-            <input type="text" id="calcECrescenteList" placeholder="[1, 2, 3, 4, 5, 6, 7, 8]">
+          <div class="calcOmniThemeInputs calc_Width_80_Input">
+            <input type="text" id="calcECrescenteList" placeholder="1, 2, 3, 4, 5, 6, 7">
           </div>
 
           <button type="submit" class="card_button" onclick="eCrescente()">Verificar</button>
+        </div>
+      </div>
+
+      <div class="card_container">
+        <h2 class="card_title"><span class="title_function"><span>function</span> maior<span>()</span></span></h2>
+        <div class="card_content">
+
+          <pre>
+              <code style="font-size: 0.9rem;">
+                <span class="omni_theme_comment_color">// Crie a função maior, que encontre o maior entre todos os valores passados em seus argumentos.</span>
+
+                <span class="omni_theme_pink_color">function</span> <span class="omni_theme_green_color">maior</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">list</span><span class="omni_theme_yellow_color">){</span>
+                  <span class="omni_theme_pink_color indentation">let</span> number <span class="omni_theme_pink_color">=</span> <span class="omni_theme_cyan_color">0</span>
+                  <span class="indentation">list.</span><span class="omni_theme_green_color">forEach</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">item</span> <span class="omni_theme_pink_color">=> {</span>
+                    <span class="omni_theme_pink_color indentation-2">if</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_green_color">Number</span><span class="omni_theme_pink_color">(</span>item<span class="omni_theme_pink_color">)</span> <span class="omni_theme_pink_color">> </span>number<span class="omni_theme_yellow_color">)</span>
+                      <span class="indentation-3">number </span><span class="omni_theme_pink_color">=</span> item
+                  <span class="omni_theme_pink_color indentation">}</span><span class="omni_theme_yellow_color">)</span>
+                  <span class="omni_theme_pink_color indentation">return</span> number
+                <span class="omni_theme_yellow_color">}</span>
+              </code>
+            </pre>
+
+          <p id="calcMaiorResult" class="result"></p>
+
+          <div class="calcOmniThemeInputs calc_Width_80_Input">
+            <input type="text" id="calcMaiorList" placeholder="1, 2, 3, 4, 5, 6, 7">
+          </div>
+
+          <button type="submit" class="card_button" onclick="maior()">Verificar</button>
+        </div>
+      </div>
+
+      <div class="card_container">
+        <h2 class="card_title"><span class="title_function"><span>function</span> myJoin<span>()</span></span></h2>
+        <div class="card_content">
+
+          <pre>
+              <code style="font-size: 0.8rem;">
+                <span class="omni_theme_comment_color">// Escreva sua própria versão da função join. Esta função recebe uma lista e um separador (por padrão ",") e gera o texto dos objetos em seu interior separados por esse separador.</span>
+
+                <span class="omni_theme_pink_color">function</span> <span class="omni_theme_green_color">myJoin</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">list</span>, <span class="omni_theme_orange_color">separator</span> <span class="omni_theme_pink_color">=</span> <span class="omni_theme_yellow_color">','){</span>
+                  <span class="omni_theme_pink_color indentation">let</span> text <span class="omni_theme_pink_color">=</span> <span class="omni_theme_yellow_color">''</span>
+                  <span class="indentation">list.</span><span class="omni_theme_green_color">forEach</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">item</span> <span class="omni_theme_pink_color">=> {</span>
+                    <span class="omni_theme_pink_color indentation-2">if</span><span class="omni_theme_yellow_color">(</span>item <span class="omni_theme_pink_color">!== </span>list<span class="omni_theme_pink_color">[</span>list.length <span class="omni_theme_pink_color">-</span><span class="omni_theme_cyan_color">1</span><span class="omni_theme_pink_color">]</span><span class="omni_theme_yellow_color">){</span>
+                      <span class="indentation-3">text </span><span class="omni_theme_pink_color">+=</span> item <span class="omni_theme_pink_color">+</span> separator
+                    <span class="omni_theme_yellow_color indentation-2">}</span> <span class="omni_theme_pink_color">else</span> <span class="omni_theme_yellow_color">{</span>
+                      <span class="indentation-3">text </span><span class="omni_theme_pink_color">+=</span> item
+                    <span class="omni_theme_yellow_color indentation-2">}</span>
+                  <span class="omni_theme_pink_color indentation">}</span><span class="omni_theme_yellow_color">)</span>
+                  <span class="omni_theme_pink_color indentation">return</span> text
+                <span class="omni_theme_yellow_color">}</span>
+              </code>
+            </pre>
+
+          <p id="MyJoinResult" class="result" style="font-size: 1.5rem;"></p>
+
+          <div class="calcOmniThemeInputs calc_Width_80_Input">
+            <input type="text" id="MyJoinList" placeholder="1, 2, 3, 4, 5, 6, 7">
+            <input type="text" id="MyJoinSeparator" placeholder="," style="width: 10%;">
+          </div>
+
+          <button type="submit" class="card_button" onclick="myJoin()">Verificar</button>
         </div>
       </div>
 
