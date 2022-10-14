@@ -184,6 +184,49 @@
         </div>
       </div>
 
+      <div class="card_container">
+        <h2 class="card_title"><span class="title_function"><span>function</span> fibonacci<span>()</span></span></h2>
+        <div class="card_content">
+
+          <pre>
+              <code style="font-size: 0.7rem;">
+                <span class="omni_theme_comment_color">// Escreva a versão não recursiva e a recursiva de uma função para calcular o n-ésimo termo da sequencia de fibonnaci.</span>
+
+                <span class="omni_theme_pink_color">function</span> <span class="omni_theme_green_color">fibonacciNoRecursion</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">n</span><span class="omni_theme_yellow_color">){</span>
+                  <span class="omni_theme_pink_color indentation">let</span> a <span class="omni_theme_pink_color">=</span> <span class="omni_theme_cyan_color">0</span>
+                  <span class="omni_theme_pink_color indentation">let</span> b <span class="omni_theme_pink_color">=</span> <span class="omni_theme_cyan_color">1</span>
+                  <span class="omni_theme_pink_color indentation">let</span> c <span class="omni_theme_pink_color">=</span> n
+                  
+                  <span class="omni_theme_pink_color indentation">for(</span>i <span class="omni_theme_pink_color">=</span> <span class="omni_theme_cyan_color">2</span>; i <span class="omni_theme_pink_color"><=</span> n; i<span class="omni_theme_pink_color">++){</span>
+                    <span class="indentation-2">c</span> <span class="omni_theme_pink_color">=</span> a <span class="omni_theme_pink_color">+</span> b
+                    <span class="indentation-2">a</span> <span class="omni_theme_pink_color">=</span> b
+                    <span class="indentation-2">b</span> <span class="omni_theme_pink_color">=</span> c
+                  <span class="omni_theme_pink_color indentation">}</span>
+                  <span class="omni_theme_pink_color indentation">return</span> c
+                <span class="omni_theme_yellow_color">}</span>
+              </code>
+            </pre>
+
+            <pre>
+              <code style="font-size: 0.7rem;">                
+                <span class="omni_theme_pink_color">function</span> <span class="omni_theme_green_color">fibonacciWithRecursion</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">n</span><span class="omni_theme_yellow_color">){</span>
+                  <span class="omni_theme_pink_color indentation">if(</span>n <span class="omni_theme_pink_color"><=</span> <span class="omni_theme_cyan_color">1</span><span class="omni_theme_pink_color">) return</span> n
+                  
+                <span class="omni_theme_pink_color indentation">return</span> <span class="omni_theme_green_color">fibonacciWithRecursion</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">n <span class="omni_theme_pink_color">-</span> <span class="omni_theme_cyan_color">1</span></span><span class="omni_theme_yellow_color">)</span> <span class="omni_theme_pink_color">+</span> <span class="omni_theme_green_color">fibonacciWithRecursion</span><span class="omni_theme_yellow_color">(</span><span class="omni_theme_orange_color">n <span class="omni_theme_pink_color">-</span> <span class="omni_theme_cyan_color">2</span></span><span class="omni_theme_yellow_color">)</span>
+                <span class="omni_theme_yellow_color">}</span>
+              </code>
+            </pre>
+
+          <p id="calcFibonacciResult" class="result"></p>
+
+          <div class="calcOmniThemeInputs">
+            <input type="number" id="calcFibonacciNumber" placeholder="5">
+          </div>
+
+          <button type="submit" class="card_button" onclick="calcFibonacci()">Verificar</button>
+        </div>
+      </div>
+
     </div>
   </main>
 </body>
