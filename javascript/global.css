@@ -200,3 +200,18 @@ input[type=number] {
   min-width: 50px;
   text-align: center;
 }
+
+/* Scrollbar styles */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}

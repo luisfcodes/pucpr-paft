@@ -154,19 +154,19 @@ console.log(myObjectList([
 
 // <----- seventh activity ----->
 
-// function fibonacciNoRecursion(n) {
-//   let a = 0
-//   let b = 1
-//   let c = n
+function fibonacciNoRecursion(n) {
+  let a = 0
+  let b = 1
+  let c = n
   
-//   for(let i = 2; i <= n; i++) {
-//     c = a + b;
-//     a = b; 
-//     b = c; 
-//   }
+  for(let i = 2; i <= n; i++) {
+    c = a + b;
+    a = b; 
+    b = c; 
+  }
   
-//   return c;
-// };
+  return c;
+};
 
 
 function fibonacciWithRecursion(n){
@@ -210,10 +210,10 @@ function calcCollatz(n){
 }
 
 const calcCollatzResult = calcCollatz(8)
-// console.log(calcCollatzResult())
-// console.log(calcCollatzResult())
-// console.log(calcCollatzResult())
-// console.log(calcCollatzResult())
+console.log(calcCollatzResult())
+console.log(calcCollatzResult())
+console.log(calcCollatzResult())
+console.log(calcCollatzResult())
 
 // <----- tenth activity ----->
 
@@ -223,6 +223,25 @@ function verbose(func) {
   }
 }
 
-const somaNumbers = (a, b) => a + b;
-const sum = verbose(somaNumbers)
+const sumNumbers = (a, b) => a + b;
+const sum = verbose(sumNumbers)
 sum(2,3)
+
+// <----- eleventh activity ----->
+
+function log(module, level, text) {
+  console.log(`${level}: ${text} (${module})`)
+}
+
+function fixar(func, ...rest){
+  return function(a){
+    return func(...rest, a)
+  }
+}
+
+let logClass = fixar(log, 'aula.js', 'INFO')
+logClass('Example')
+logClass('PUCPR')
+
+let sum10 = fixar(sumNumbers, 10);
+console.log(sum10(50));
