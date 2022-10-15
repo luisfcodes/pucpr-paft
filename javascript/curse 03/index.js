@@ -8,7 +8,7 @@
 //   return a + b
 // }
 
-// const soma = () => a + b
+// const soma = (a, b) => a + b
 
 const soma = () => {
   const a = Number(document.getElementById('calcSomaNumberOne').value)
