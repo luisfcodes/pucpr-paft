@@ -1,0 +1,34 @@
+/* .gameCard_container {
+  background-image: url('./images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  border: 6px solid var(--gray-100);
+  transition: all 1.5s;
+  cursor: pointer;
+}
+
+.gameCard_container:hover {
+  transform: scale(1.1);
+  transform: rotateY(180deg);
+  background-image: url('./images/as.png');
+  border: 0;
+  background-size: contain;
+} */
+
+.gameCard {
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  border: 6px solid var(--gray-100);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.gameCardHover {
+  transform: scale(1.1);
+  transform: rotateY(180deg);
+  border: 0;
+}

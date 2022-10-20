@@ -79,7 +79,7 @@ function differenceBetweenDates(before, after) {
 
 console.log('seventh activity\n', differenceBetweenDates("14/10/2022", "22/10/2022"))
 
-// <------ eighth activity ------>
+// <----  tivity ------>
 
 function between(initial, final, testDate, {inclusiveStart, inclusiveEnd} = {}){
   function calcMilliseconds(date){
