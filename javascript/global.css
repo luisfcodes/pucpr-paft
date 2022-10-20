@@ -75,8 +75,10 @@ li {
 .main_container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
 /* Cards styles */

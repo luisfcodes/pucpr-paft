@@ -1,34 +1,70 @@
-/* .gameCard_container {
-  background-image: url('./images/background.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 200px;
-  height: 300px;
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  color: var(--dark);
+}
+
+.scoreboard h2 {
   border-radius: 8px;
-  border: 6px solid var(--gray-100);
-  transition: all 1.5s;
+  padding: 0.8rem 1rem;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.scoreboard span {
+  background-color: var(--gray-900);
+  color: var(--gray-100);
+  border-radius: 8px;
+  padding: 0.2rem 1rem;
+}
+
+.scoreboard button {
+  background-color: var(--omni-theme-green);
+  color: var(--gray-900);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+  border: 0;
   cursor: pointer;
 }
 
-.gameCard_container:hover {
+.scoreboard button:hover {
   transform: scale(1.1);
-  transform: rotateY(180deg);
-  background-image: url('./images/as.png');
-  border: 0;
-  background-size: contain;
-} */
+}
 
 .gameCard {
   width: 200px;
   height: 300px;
   border-radius: 8px;
-  border: 6px solid var(--gray-100);
-  transition: all 1s;
   cursor: pointer;
+  transform: rotateY(180deg);
+  transition: all 1s;
 }
 
-.gameCardHover {
-  transform: scale(1.1);
-  transform: rotateY(180deg);
-  border: 0;
+.gameCard_active {
+  transform: rotateY(0);
+}
+
+.game_finished_message {
+  position: relative;
+}
+
+.game_finished_message::after{
+  content: 'Fim de jogo \A Parabéns';
+  width: calc(100% - 3.5rem);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  white-space: pre;
+  text-align: center;
 }
