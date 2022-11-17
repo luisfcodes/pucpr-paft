@@ -1,0 +1,19 @@
+.quiz {
+  flex-direction: column;
+}
+
+.quiz a button {
+  cursor: pointer;
+  background-color: var(--omni-theme-green);
+  color: var(--gray-900);
+  font-size: 1.5rem;
+  padding: .5rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  transition: .2s;
+}
+
+.quiz a button:hover {
+  transform: scale(1.1);
+}

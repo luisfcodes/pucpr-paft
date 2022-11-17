@@ -1,0 +1,37 @@
+.activityOneAlert {
+  background-color: #dc3545;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.fibonacciSequenceList {
+  background-color: var(--omni-theme-background);
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* Timer */
+
+.displayTimer {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.inputsTimer {
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* Guessing Game */
+
+.GuessingGameResult {
+  font-size: 1.25rem;
+}
+
+button:disabled {
+  opacity: .3;
+}

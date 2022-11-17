@@ -74,4 +74,9 @@
   transform: rotate(-45deg);
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
+  text-align: center;
+}
+
+.card_banner_two_elements{
+  font-size: 6rem;
 }
