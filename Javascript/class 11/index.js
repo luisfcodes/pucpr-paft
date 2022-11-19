@@ -76,7 +76,7 @@ async function timer() {
         timerMinutes.innerText = timerFormatted(minutes)
         timerSeconds.innerText = timerFormatted(seconds)
 
-        if (seconds <= 0) {
+        if (secondsTotal <= 0) {
           clearInterval(timerInterval)
         }
       }, 1000)
