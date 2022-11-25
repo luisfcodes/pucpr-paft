@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: $background-rgb-900;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  max-width: 1315px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-primary-color {
+    text-transform: uppercase;
+    font-family: 'Sono', sans-serif;
+    color: $white;
+    position: relative;
+    border: none;
+    background: $background-rgb-button;
+    padding: .8rem 2.5rem;
+    font-size: 1.35rem;
+    border-radius: 8px;
+    letter-spacing: 1.3px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: $background-rgb-button-before;
+      box-shadow: 1px 1px 25px $boxShadow-rgb-before;
+      z-index: -1;
+      margin: -3px;
+      border-radius: 8px;
+    }
+
+    &:hover {
+      background: $pink;
+
+      &::before {
+        background: $background-rgb-button-before-hover;
+        box-shadow: 1px 1px 25px $boxShadow-rgb-before-hover;
+      }
+    }
+}

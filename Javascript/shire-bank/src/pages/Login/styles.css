@@ -1,0 +1,136 @@
+header button {
+  display: none;
+}
+
+.main-wrapper {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem;
+  width: 80%;
+  height: 80vh;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+}
+.main-wrapper section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(53, 50, 218);
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  color: #fff;
+}
+.main-wrapper section .section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+.main-wrapper section h2 {
+  font-size: 2.5rem;
+  font-family: "Courgette", cursive;
+}
+.main-wrapper section .section-call-to-action p {
+  color: #d4d4d8;
+  margin-top: 1.5rem;
+  line-height: 1.8;
+}
+.main-wrapper section .section-comments {
+  background-color: rgb(32, 30, 192);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.main-wrapper section .section-comments .section-comments-user {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main-wrapper section .section-comments .section-comments-user div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.main-wrapper section .section-comments .section-comments-user div span:first-child {
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1.1px;
+}
+.main-wrapper section .section-comments .section-comments-user div span:last-child {
+  font-size: 0.8rem;
+  color: #d4d4d8;
+}
+.main-wrapper .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 2.5rem;
+  font-family: "Alexandria", sans-serif;
+}
+.main-wrapper .login-container .login-content h3 {
+  font-size: 2rem;
+}
+.main-wrapper .login-container .login-content p {
+  margin-top: 0.5rem;
+}
+.main-wrapper .login-container .login-content p button {
+  color: rgb(32, 30, 192);
+  background-color: transparent;
+  border: none;
+  font-family: "Alexandria", sans-serif;
+  font-size: 1rem;
+}
+.main-wrapper .login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-wrapper .login-container form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.main-wrapper .login-container form div label {
+  font-weight: 400;
+  color: #71717a;
+}
+.main-wrapper .login-container form div input {
+  padding: 0.4rem;
+  border-radius: 8px;
+  outline-color: #d4d4d8;
+  border: 2px solid #d4d4d8;
+  font-size: 1rem;
+  font-family: "Alexandria", sans-serif;
+}
+.main-wrapper .login-container form button {
+  font-family: "Alexandria", sans-serif;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 1rem;
+  border-radius: 8px;
+  background-color: rgb(53, 50, 218);
+  border: 1px solid rgb(32, 30, 192);
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+.main-wrapper .login-container form button:hover {
+  transform: scale(1.1);
+}
+.main-wrapper .login-container form button a {
+  color: #fff;
+}
+.main-wrapper .login-container form a {
+  text-align: center;
+  color: rgb(32, 30, 192);
+}
+.main-wrapper .login-container form .form-checkbox {
+  flex-direction: row;
+  gap: 1rem;
+}/*# sourceMappingURL=styles.css.map */

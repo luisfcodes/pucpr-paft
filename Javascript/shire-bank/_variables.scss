@@ -1,0 +1,27 @@
+$background: rgba(255, 255, 255, 0.95);
+$white: #fff;
+
+$gray-50: #fafafa;
+$gray-100: #f4f4f5;
+$gray-300: #d4d4d8;
+$gray-400: #a1a1aa;
+$gray-500: #71717a;
+$gray-700: #3f3f46;
+$gray-900: #18181b;
+
+$blue-300: rgb(53, 50, 218);
+$blue-500: rgb(32, 30, 192);
+
+$pink: #B83280;
+
+$background-rgb-button: linear-gradient(140deg, rgb(29, 18, 61) 0%, rgba(50, 38, 89, 1) 68%, rgb(29, 18, 61) 100%);
+$background-rgb-button-before: linear-gradient(140deg, rgb(109, 0, 252) 0%, rgb(118, 14, 255) 50%, rgb(167, 14, 255) 70%, rgb(235, 14, 255) 100%);
+$background-rgb-button-before-hover: linear-gradient(140deg, rgb(66, 3, 47) 0%, rgb(71, 6, 51) 50%, rgb(68, 5, 49) 68%, rgb(75, 5, 53) 100%);
+
+$boxShadow-rgb-before: rgba(84, 6, 185, 1);
+$boxShadow-rgb-before-hover: rgba(184, 50, 128, 1);
+
+$background-rgb-300: linear-gradient(140deg, rgb(42, 29, 90) 0%, rgb(52, 33, 109) 50%, rgb(63, 48, 112) 68%, rgb(109, 36, 88) 100%);
+$background-rgb-500: linear-gradient(140deg, rgb(31, 21, 66) 0%, rgba(42, 27, 89, 1) 50%, rgba(50, 38, 89, 1) 68%, rgb(71, 23, 57) 100%);
+$background-rgb-700: linear-gradient(140deg, rgb(21, 14, 44) 0%, rgb(27, 18, 56) 50%, rgb(28, 21, 51) 68%, rgb(39, 13, 32) 100%);
+$background-rgb-900: linear-gradient(140deg, rgba(0,0,0,1) 0%, rgba(42,27,89,1) 50%, rgba(50,38,89,1) 68%, rgba(112,36,89,1) 100%);

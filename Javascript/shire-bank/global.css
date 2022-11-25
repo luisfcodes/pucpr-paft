@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(140deg, rgb(0, 0, 0) 0%, rgb(42, 27, 89) 50%, rgb(50, 38, 89) 68%, rgb(112, 36, 89) 100%);
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  max-width: 1315px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-primary-color {
+  text-transform: uppercase;
+  font-family: "Sono", sans-serif;
+  color: #fff;
+  position: relative;
+  border: none;
+  background: linear-gradient(140deg, rgb(29, 18, 61) 0%, rgb(50, 38, 89) 68%, rgb(29, 18, 61) 100%);
+  padding: 0.8rem 2.5rem;
+  font-size: 1.35rem;
+  border-radius: 8px;
+  letter-spacing: 1.3px;
+}
+.button-primary-color::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(140deg, rgb(109, 0, 252) 0%, rgb(118, 14, 255) 50%, rgb(167, 14, 255) 70%, rgb(235, 14, 255) 100%);
+  box-shadow: 1px 1px 25px rgb(84, 6, 185);
+  z-index: -1;
+  margin: -3px;
+  border-radius: 8px;
+}
+.button-primary-color:hover {
+  background: #B83280;
+}
+.button-primary-color:hover::before {
+  background: linear-gradient(140deg, rgb(66, 3, 47) 0%, rgb(71, 6, 51) 50%, rgb(68, 5, 49) 68%, rgb(75, 5, 53) 100%);
+  box-shadow: 1px 1px 25px rgb(184, 50, 128);
+}/*# sourceMappingURL=global.css.map */

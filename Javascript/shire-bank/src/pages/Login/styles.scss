@@ -1,0 +1,166 @@
+@import '../../../variables.scss';
+
+header {
+  button {
+    display: none;
+  }
+}
+
+.main-wrapper {
+  background-color: $background;
+  padding: 1rem;
+  width: 80%;
+  height: 80vh;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $blue-300;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 2rem;
+    color: $white;
+
+    .section-title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-family: 'Courgette', cursive;
+    }
+
+    .section-call-to-action {
+      p {
+        color: $gray-300;
+        margin-top: 1.5rem;
+        line-height: 1.8;
+      }
+    }
+
+    .section-comments {
+      background-color: $blue-500;
+      padding: 1rem;
+      border-radius: 10px;
+
+      .section-comments-user {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: .2rem;
+
+          & span:first-child {
+            font-weight: bold;
+            font-size: 0.9rem;
+            letter-spacing: 1.1px;
+          }
+
+          & span:last-child {
+            font-size: .8rem;
+            color: $gray-300;
+          }
+        }
+      }
+    }
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 2.5rem;
+    font-family: 'Alexandria', sans-serif;
+
+    .login-content {
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        margin-top: .5rem;
+
+        button {
+          color: $blue-500;
+          background-color: transparent;
+          border: none;
+          font-family: 'Alexandria', sans-serif;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+
+        label {
+          font-weight: 400;
+          color: $gray-500;
+        }
+
+        input {
+          padding: .4rem;
+          border-radius: 8px;
+          outline-color: $gray-300;
+          border: 2px solid $gray-300;
+          font-size: 1rem;
+          font-family: 'Alexandria', sans-serif;
+        }
+      }
+
+      button {
+        font-family: 'Alexandria', sans-serif;
+        padding: .5rem 1rem;
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 1rem;
+        border-radius: 8px;
+        background-color: $blue-300;
+        border: 1px solid $blue-500;
+        color: $white;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        transition: all .4s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        a {
+          color: $white;
+        }
+      }
+
+      a {
+        text-align: center;
+        color: $blue-500;
+      }
+
+      .form-checkbox {
+        flex-direction: row;
+        gap: 1rem;
+      }
+    }
+  }
+}
