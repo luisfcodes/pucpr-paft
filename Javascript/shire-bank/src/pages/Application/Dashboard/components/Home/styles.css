@@ -1,0 +1,58 @@
+.home-section-info .home-section-info-user {
+  position: relative;
+  font-size: 1.2rem;
+}
+.home-section-info .home-section-info-user span {
+  display: block;
+}
+.home-section-info .home-section-info-user a {
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+.home-section-info .home-section-info-user a .aside-button-logout {
+  font-size: 1.1rem;
+  padding: 0.5rem 2rem;
+}
+.home-section-info .home-section-info-balance {
+  margin-top: 3rem;
+}
+.home-section-info .home-section-info-balance span {
+  font-size: 1.25rem;
+  color: #f4f4f5;
+  display: block;
+  text-align: end;
+}
+
+.home-section-options {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.home-section-options button {
+  background-color: transparent;
+  border: none;
+  font-family: "Alexandria", sans-serif;
+  font-size: 1rem;
+  transition: all 0.4s;
+}
+.home-section-options button:hover {
+  transform: scale(1.1);
+}
+.home-section-options button img {
+  width: 80px;
+}
+.home-section-options .home-section-options-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  padding: 1rem;
+  color: #f4f4f5;
+}
+
+.home-section-creditCard .home-section-creditCard-content div:last-child {
+  margin-top: 0.5rem;
+}/*# sourceMappingURL=styles.css.map */
