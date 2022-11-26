@@ -8,15 +8,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../../../assets/favicon.png" type="image/png">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Courgette&family=Alexandria:wght@400;700&family=Metamorphous&family=Open+Sans:wght@400;600;700"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Alexandria:wght@400;700&family=Metamorphous&family=Open+Sans:wght@400;600;700" rel="stylesheet">
+  
   <link rel="stylesheet" href="../../../../global.css">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./components/Home/styles.css">
   <link rel="stylesheet" href="./components/Statement/styles.css">
+  <link rel="stylesheet" href="./components/Loan/styles.css">
+
   <script src="./components/Home/index.js" defer></script>
   <script src="./components/Statement/index.js" defer></script>
+  <script src="./components/Transfer/index.js" defer></script>
+  <script src="./components/Payments/index.js" defer></script>
+  <script src="./components/Loan/index.js" defer></script>
+  
   <title>Shire | Dashboard</title>
 </head>
 
@@ -34,15 +39,15 @@
         </div>
         <div class="aside-button-option">
           <img src="../../../assets/icon-transfer.png" alt="">
-          <button>Transferência</button>
+          <button onclick="Transfer()">Transferência</button>
         </div>
         <div class="aside-button-option">
           <img src="../../../assets/icon-payment2.png" alt="">
-          <button>Pagamentos</button>
+          <button onclick="Payments()">Pagamentos</button>
         </div>
         <div class="aside-button-option">
           <img src="../../../assets/icon-loan.png" alt="">
-          <button>Empréstimos</button>
+          <button onclick="Loan()">Empréstimos</button>
         </div>
         <div class="aside-button-option">
           <img src="../../../assets/icon-investiment.png" alt="">
@@ -64,7 +69,7 @@
     </aside>
 
     <div id="root" class="root">
-
+      
     </div>
   </main>
 </body>
