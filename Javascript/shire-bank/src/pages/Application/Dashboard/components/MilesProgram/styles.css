@@ -1,0 +1,29 @@
+.milesProgram-section .milesProgram-section-title {
+  display: block;
+  font-size: 1.25rem;
+}
+.milesProgram-section .milesProgram-section-subtitle {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #a1a1aa;
+}
+.milesProgram-section .milesProgram-section-options {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.milesProgram-section .milesProgram-section-options .milesProgram-section-options-title {
+  display: block;
+}
+.milesProgram-section .milesProgram-section-options .milesProgram-section-options-subtitle {
+  display: block;
+  margin-top: 1rem;
+  color: #a1a1aa;
+}
+.milesProgram-section .milesProgram-section-options div {
+  border: 2px solid #B83280;
+  border-radius: 8px;
+  padding: 1rem;
+}/*# sourceMappingURL=styles.css.map */

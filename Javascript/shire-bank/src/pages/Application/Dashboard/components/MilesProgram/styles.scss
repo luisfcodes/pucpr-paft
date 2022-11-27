@@ -1,0 +1,38 @@
+@import '../../../../../../variables';
+
+.milesProgram-section {
+  .milesProgram-section-title {
+    display: block;
+    font-size: 1.25rem;
+  }
+
+  .milesProgram-section-subtitle {
+    display: block;
+    margin-top: .5rem;
+    font-size: .9rem;
+    color: $gray-400;
+  }
+
+  .milesProgram-section-options {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .milesProgram-section-options-title {
+      display: block;
+    }
+
+    .milesProgram-section-options-subtitle {
+      display: block;
+      margin-top: 1rem;
+      color: $gray-400;
+    }
+
+    div {
+      border: 2px solid $pink;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+  }
+}

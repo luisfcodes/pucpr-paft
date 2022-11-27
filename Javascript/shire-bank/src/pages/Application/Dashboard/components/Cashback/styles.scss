@@ -1,0 +1,38 @@
+@import '../../../../../../variables';
+
+.cashback-section {
+  .cashback-section-title {
+    display: block;
+    font-size: 1.25rem;
+  }
+
+  .cashback-section-subtitle {
+    display: block;
+    margin-top: .5rem;
+    font-size: .9rem;
+    color: $gray-400;
+  }
+
+  .cashback-section-options {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .cashback-section-options-title {
+      display: block;
+    }
+
+    .cashback-section-options-subtitle {
+      display: block;
+      margin-top: 1rem;
+      color: $gray-400;
+    }
+
+    div {
+      border: 2px solid $pink;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+  }
+}

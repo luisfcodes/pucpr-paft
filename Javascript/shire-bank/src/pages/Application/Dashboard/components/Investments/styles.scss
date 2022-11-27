@@ -1,0 +1,40 @@
+@import '../../../../../../variables';
+
+.investments-section {
+  .section-content {
+    .investments-section-title {
+      display: block;
+      font-size: 1.25rem;
+
+      &+span {
+        display: block;
+        margin-top: .5rem;
+        font-size: .9rem;
+        color: $gray-400;
+      }
+    }
+  }
+
+  .investments-section-options {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .investments-section-options-title {
+      display: block;
+    }
+
+    .investments-section-options-subtitle {
+      display: block;
+      margin-top: 1rem;
+      color: $gray-400;
+    }
+
+    div {
+      border: 2px solid $pink;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+  }
+}

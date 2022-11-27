@@ -1,0 +1,29 @@
+.report-section .report-section-title {
+  display: block;
+  font-size: 1.25rem;
+}
+.report-section .report-section-subtitle {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #a1a1aa;
+}
+.report-section .report-section-options {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.report-section .report-section-options .report-section-options-title {
+  display: block;
+}
+.report-section .report-section-options .report-section-options-subtitle {
+  display: block;
+  margin-top: 1rem;
+  color: #a1a1aa;
+}
+.report-section .report-section-options div {
+  border: 2px solid #B83280;
+  border-radius: 8px;
+  padding: 1rem;
+}/*# sourceMappingURL=styles.css.map */
