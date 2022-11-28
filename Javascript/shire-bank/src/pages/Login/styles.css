@@ -89,6 +89,18 @@ header button {
   flex-direction: column;
   gap: 1rem;
 }
+.main-wrapper .login-container form .login-content-form-message {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  color: #f4f4f5;
+}
+.main-wrapper .login-container form .login-content-form-message-error {
+  background-color: #ef4444;
+}
+.main-wrapper .login-container form .login-content-form-message-success {
+  background-color: #15803d;
+}
 .main-wrapper .login-container form div {
   display: flex;
   flex-direction: column;
@@ -137,6 +149,14 @@ header button {
 .main-wrapper .login-container form .warning {
   font-size: 0.8rem;
   color: #ef4444;
+}
+.main-wrapper .login-container form .hidden {
+  display: none;
+}
+.main-wrapper .login-container form .login-content-input-password .login-content-input-password-requirements div {
+  margin-left: 1rem;
+  color: #B83280;
+  font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 1024px) {

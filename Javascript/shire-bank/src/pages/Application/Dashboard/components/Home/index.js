@@ -1,18 +1,45 @@
-function Home() {
+async function userCurrent() {
+  try {
+    const user = await localStorage.getItem('userSession')
+
+    if(!user){
+      window.location.replace('../../Login/index.html')
+      throw new Error('Usuário não está logado.')
+    }
+
+    const { data } = await queryUser(user)
+    return data[0]
+  } catch (err) {
+    throw new Error(err)
+  }
+}
+
+function signOut(){
+  localStorage.removeItem('userSession')
+}
+
+function formatCurrency(value){
+  return value.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+}
+
+async function Home() {
+  const userData = await userCurrent()
+  console.log(userData)
+
   const rootElement = document.querySelector('#root')
   rootElement.innerHTML = `
   <section class="section-container home-section-info">
   <div class="section-content">
     <div class="home-section-info-user">
-      <h1>Olá, <span>Luis Fernando</span></h1>
+      <h1>Olá, <span>${userData.name}</span></h1>
       <a href="../../../../index.html">
-        <button class="button-primary-color aside-button-logout">Sair</button>
+        <button class="button-primary-color aside-button-logout" onclick="signOut()">Sair</button>
       </a>
     </div>
 
     <div class="home-section-info-balance">
       <h3>Saldo da conta</h3>
-      <span>R$5.678,90</span>
+      <span>${formatCurrency(userData.balance)}</span>
     </div>
   </div>
 </section>
@@ -65,11 +92,11 @@ function Home() {
       <h2>Cartão de crédito</h2>
       <div>
         <h3>Fatura atual</h3>
-        <span>R$2.645,45</span>
+        <span>${formatCurrency(userData.invoice)}</span>
       </div>
       <div>
         <h3>Limite disponível</h3>
-        <span>R$3.278,67</span>
+        <span>${formatCurrency(userData.invoice_limit)}</span>
       </div>
     </div>
   </div>
@@ -80,7 +107,7 @@ function Home() {
     <h2>Empréstimo</h2>
     <div>
       <h3>Valor disponível</h3>
-      <span>R$15.000,00</span>
+      <span>R$85.000,00</span>
     </div>
   </div>
 </section>
