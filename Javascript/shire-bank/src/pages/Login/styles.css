@@ -134,6 +134,10 @@ header button {
   flex-direction: row;
   gap: 1rem;
 }
+.main-wrapper .login-container form .warning {
+  font-size: 0.8rem;
+  color: #ef4444;
+}
 
 @media only screen and (max-width: 1024px) {
   .main-wrapper section h2 {

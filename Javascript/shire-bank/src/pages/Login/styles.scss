@@ -161,6 +161,11 @@ header {
         flex-direction: row;
         gap: 1rem;
       }
+
+      .warning {
+        font-size: .8rem;
+        color: $red-500;
+      }
     }
   }
 }

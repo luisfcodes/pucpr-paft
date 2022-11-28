@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="./styles.css">
   <script src="../../components/Header/index.js" defer></script>
   <script src="./index.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1"></script>
+  <script src="./services/supabase.js"></script>
   <title>Shire | Junte-se ao banco perfeito pra você</title>
 </head>
 
@@ -39,25 +41,7 @@
       </section>
 
       <div class="login-container" id="login-container">
-        <div class="login-content">
-          <h3>Login</h3>
-          <p id="login-content-question">Não possui uma conta? <button onclick="register()">Registre-se</button></p>
-        </div>
-
-        <form action="../Application/Dashboard/index.html">
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email">
-          </div>
-
-          <div>
-            <label for="password">Senha</label>
-            <input type="password" id="password">
-          </div>
-
-          <button>Entrar</button>
-          <a href="#">Esqueceu a senha?</a>
-        </form>
+        
       </div>
     </div>
   </main>
