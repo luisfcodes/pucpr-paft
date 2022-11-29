@@ -90,26 +90,6 @@ function loginDOM() {
   `
 }
 
-function masks(type) {
-  switch (type.target.id) {
-    case 'phone':
-      return document.querySelector(`#${type.target.id}`).value = type.target.value
-        .replace(/\D/g, '')
-        .replace(/(\d{2})(\d)/, '($1) $2')
-        .replace(/(\d{4})(\d)/, '$1-$2')
-        .replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3')
-        .replace(/(-\d{4})\d+?$/, '$1')
-
-    case 'cpf':
-      return document.querySelector(`#${type.target.id}`).value = type.target.value
-        .replace(/\D/g, '')
-        .replace(/(\d{3})(\d)/, '$1.$2')
-        .replace(/(\d{3})(\d)/, '$1.$2')
-        .replace(/(\d{3})(\d{1,2})/, '$1-$2')
-        .replace(/(-\d{2})\d+?$/, '$1')
-  }
-}
-
 function inputValidations(element, regex, message) {
   if (!regex.test(element.value)) {
     document.querySelector(`#${element.id}Warning`).textContent = message
