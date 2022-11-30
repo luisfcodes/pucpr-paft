@@ -71,6 +71,7 @@ header {
       display: flex;
       height: 100%;
       visibility: visible;
+      overflow-y: auto;
     }
 
     li {
@@ -87,6 +88,27 @@ header {
   }
 
   .button-mobile {
-    display: block;
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: $white;
+    cursor: pointer;
+    gap: .5rem;
+
+    .button-menu-hamburguer {
+      width: 20px;
+      border-top: 2px solid $white;
+
+      &::after, &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: $white;
+        margin-top: 5px;
+      }
+    }
   }
 }

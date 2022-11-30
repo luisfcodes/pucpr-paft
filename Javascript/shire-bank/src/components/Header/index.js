@@ -3,7 +3,7 @@ header.innerHTML = `
 <a href="/"><span class="logo">S<span>h</span>ire</span></a>
 
 <nav>
-  <button class="button-mobile" onclick="handleMenuMobile()">Menu<span class="button-menu-hamburguer"></span></button>
+  <button class="button-mobile" onclick="handleMenuMobile()"><span class="button-menu-hamburguer"></span></button>
   <ul class="navbar" id="navbar">
     <li><a href="#">Sobre</a></li>
     <li><a href="#">Recursos</a></li>
