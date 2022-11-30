@@ -299,6 +299,11 @@ aside.active .button-menu::before {
   color: #fff;
 }
 
+@media only screen and (max-width: 1536px) {
+  .root-xl {
+    max-width: 60%;
+  }
+}
 @media only screen and (max-width: 1280px) {
   main {
     gap: 1rem;

@@ -2,11 +2,14 @@ header button {
   display: none;
 }
 
+main {
+  padding: 2rem 0;
+}
+
 .main-wrapper {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 1rem;
   width: 80%;
-  height: 80vh;
   border-radius: 10px;
   margin: 0 auto;
   display: flex;
@@ -43,6 +46,7 @@ header button {
   padding: 1rem;
   border-radius: 10px;
   letter-spacing: 0.5px;
+  margin-top: 2rem;
 }
 .main-wrapper section .section-comments .section-comments-user {
   margin-top: 1rem;
