@@ -26,4 +26,25 @@
   border: 2px solid #B83280;
   border-radius: 8px;
   padding: 1rem;
+  width: 50%;
+  height: 100%;
+}
+.report-section .report-section-options :hover {
+  background-color: #B83280;
+  cursor: pointer;
+}
+.report-section .report-section-options :hover .report-section-options-subtitle {
+  color: #f4f4f5;
+}
+
+@media only screen and (max-width: 640px) {
+  .report-section .section-content .report-section-title {
+    font-size: 1.1rem;
+  }
+  .report-section .report-section-options {
+    flex-direction: column;
+  }
+  .report-section .report-section-options div {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

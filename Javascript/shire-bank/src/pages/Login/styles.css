@@ -42,6 +42,7 @@ header button {
   background-color: rgb(32, 30, 192);
   padding: 1rem;
   border-radius: 10px;
+  letter-spacing: 0.5px;
 }
 .main-wrapper section .section-comments .section-comments-user {
   margin-top: 1rem;
@@ -62,6 +63,9 @@ header button {
 .main-wrapper section .section-comments .section-comments-user div span:last-child {
   font-size: 0.8rem;
   color: #d4d4d8;
+}
+.main-wrapper section .section-comments .section-comments-user img {
+  width: 70px;
 }
 .main-wrapper .login-container {
   display: flex;
@@ -88,18 +92,6 @@ header button {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-.main-wrapper .login-container form .login-content-form-message {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  border-radius: 8px;
-  color: #f4f4f5;
-}
-.main-wrapper .login-container form .login-content-form-message-error {
-  background-color: #ef4444;
-}
-.main-wrapper .login-container form .login-content-form-message-success {
-  background-color: #15803d;
 }
 .main-wrapper .login-container form div {
   display: flex;
@@ -161,13 +153,31 @@ header button {
 
 @media only screen and (max-width: 1024px) {
   .main-wrapper section h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .main-wrapper section .section-call-to-action-subtitle {
+    font-size: 0.9rem;
+  }
+  .main-wrapper section .section-comments p {
+    font-size: 0.8rem;
+  }
+  .main-wrapper section .section-comments .section-comments-user img {
+    width: 50px;
   }
   .main-wrapper .login-container .login-content h3 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 768px) {
+  html, body {
+    font-size: 15px;
+  }
+  .main-wrapper {
+    gap: 1rem;
+  }
+  .main-wrapper section {
+    padding: 1rem;
+  }
   .main-wrapper section h2 {
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -182,5 +192,10 @@ header button {
   }
   .main-wrapper .login-container .login-content h3 {
     font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .main-wrapper section {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

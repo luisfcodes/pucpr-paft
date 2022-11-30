@@ -26,4 +26,25 @@
   border: 2px solid #B83280;
   border-radius: 8px;
   padding: 1rem;
+  width: 50%;
+  height: 100%;
+}
+.investments-section .investments-section-options :hover {
+  background-color: #B83280;
+  cursor: pointer;
+}
+.investments-section .investments-section-options :hover .investments-section-options-subtitle {
+  color: #f4f4f5;
+}
+
+@media only screen and (max-width: 640px) {
+  .investments-section .section-content .investments-section-title {
+    font-size: 1.1rem;
+  }
+  .investments-section .investments-section-options {
+    flex-direction: column;
+  }
+  .investments-section .investments-section-options div {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

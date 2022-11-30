@@ -10,7 +10,7 @@
 body {
   min-height: 100vh;
   height: 100%;
-  background: rgb(0,0,0);
+  background: rgb(0, 0, 0);
   background: $background-rgb-900;
   font-family: 'Open Sans', sans-serif;
 }
@@ -35,34 +35,53 @@ a {
 }
 
 .button-primary-color {
-    text-transform: uppercase;
-    font-family: 'Sono', sans-serif;
-    color: $white;
-    position: relative;
-    border: none;
-    background: $background-rgb-button;
-    padding: .8rem 2.5rem;
-    font-size: 1.35rem;
+  text-transform: uppercase;
+  font-family: 'Sono', sans-serif;
+  color: $white;
+  position: relative;
+  border: none;
+  background: $background-rgb-button;
+  padding: .8rem 2.5rem;
+  font-size: 1.35rem;
+  border-radius: 8px;
+  letter-spacing: 1.3px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: $background-rgb-button-before;
+    box-shadow: 1px 1px 25px $boxShadow-rgb-before;
+    z-index: -1;
+    margin: -3px;
     border-radius: 8px;
-    letter-spacing: 1.3px;
+  }
+
+  &:hover {
+    background: $pink;
 
     &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: $background-rgb-button-before;
-      box-shadow: 1px 1px 25px $boxShadow-rgb-before;
-      z-index: -1;
-      margin: -3px;
-      border-radius: 8px;
+      background: $background-rgb-button-before-hover;
+      box-shadow: 1px 1px 25px $boxShadow-rgb-before-hover;
     }
+  }
+}
 
-    &:hover {
-      background: $pink;
+.hidden {
+  display: none;
+}
 
-      &::before {
-        background: $background-rgb-button-before-hover;
-        box-shadow: 1px 1px 25px $boxShadow-rgb-before-hover;
-      }
-    }
+.message {
+  padding: 0.5rem 1rem;
+  font-size: .9rem;
+  border-radius: 8px;
+  color: $gray-100;
+}
+
+.message-success {
+  background-color: $green-700;
+}
+
+.message-error {
+  background-color: $red-500;  
 }

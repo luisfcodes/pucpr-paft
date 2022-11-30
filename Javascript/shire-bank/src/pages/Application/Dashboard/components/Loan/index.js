@@ -4,8 +4,8 @@ function Loan(){
   <section class="section-container loan-section">
   <div class="section-content">
     <div>
-      <span class="loan-section-title">Realize suas transferência de forma rápida e segura.</span>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non harum sed nihil maxime saepe ipsa provident veniam nesciunt molestiae ducimus eos.</span>
+      <span class="loan-section-title">Escolha a melhor opção para o seu momento</span>
+      <span>Com juros baixíssimos e prazos longos de pagamento, temos certeza que nossas opções se encaixarão perfeitamente no seu orçamento. Consiga agora mesmo o dinheiro que faltava para realizar seu sonho.</span>
     </div>
   </div>
 

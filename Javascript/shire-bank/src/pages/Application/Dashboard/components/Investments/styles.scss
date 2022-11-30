@@ -35,6 +35,35 @@
       border: 2px solid $pink;
       border-radius: 8px;
       padding: 1rem;
+      width: 50%;
+      height: 100%;
+    }
+
+    :hover {
+      background-color: $pink;
+      cursor: pointer;
+
+      .investments-section-options-subtitle {
+        color: $gray-100;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .investments-section {
+    .section-content {
+      .investments-section-title {
+        font-size: 1.1rem;
+      }
+    }
+  
+    .investments-section-options {
+      flex-direction: column;
+  
+      div {
+        width: 100%;
+      }
     }
   }
 }

@@ -60,3 +60,39 @@
     }
   }
 }
+
+@media only screen and (max-width: 1280px) {
+  .statement-section {
+    .statement-search {  
+      .statement-input {
+        width: 70%;
+      } 
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .statement-section {
+    .statement-search {  
+      .statement-input {
+        width: 100%;
+      } 
+    }
+  
+    .statement-cards {  
+      .statement-card {  
+        .statement-card-title {
+          font-size: .9rem;
+        }
+  
+        .statement-card-customer {
+          font-size: .8rem;
+        }
+  
+        .statement-card-price {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

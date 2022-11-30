@@ -8,22 +8,40 @@
   font-size: 0.9rem;
   color: #a1a1aa;
 }
-.cashback-section .cashback-section-options {
+.cashback-section .cashback-section-about {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
 }
-.cashback-section .cashback-section-options .cashback-section-options-title {
+.cashback-section .cashback-section-about .cashback-section-about-title {
   display: block;
 }
-.cashback-section .cashback-section-options .cashback-section-options-subtitle {
-  display: block;
+.cashback-section .cashback-section-about .cashback-section-about-paragraph {
   margin-top: 1rem;
   color: #a1a1aa;
 }
-.cashback-section .cashback-section-options div {
+.cashback-section .cashback-section-about div {
   border: 2px solid #B83280;
   border-radius: 8px;
   padding: 1rem;
+}
+.cashback-section .cashback-section-about button {
+  font-family: "Alexandria", sans-serif;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(53, 50, 218);
+  border: 1px solid rgb(32, 30, 192);
+  color: #f4f4f5;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+.cashback-section .cashback-section-about button:hover {
+  transform: scale(1.025);
+}
+.cashback-section .cashback-section-about button a {
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */

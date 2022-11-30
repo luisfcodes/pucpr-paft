@@ -25,3 +25,7 @@ function formatCurrency(value){
 function formatDate(date){
   return new Intl.DateTimeFormat('pt-BR').format(new Date(date));
 }
+
+function handleShowMenu(){
+  document.querySelector('aside').classList.toggle('active')
+}

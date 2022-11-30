@@ -33,6 +33,35 @@
       border: 2px solid $pink;
       border-radius: 8px;
       padding: 1rem;
+      width: 50%;
+      height: 100%;
+    }
+
+    :hover {
+      background-color: $pink;
+      cursor: pointer;
+
+      .report-section-options-subtitle {
+        color: $gray-100;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .report-section {
+    .section-content {
+      .report-section-title {
+        font-size: 1.1rem;
+      }
+    }
+  
+    .report-section-options {
+      flex-direction: column;
+  
+      div {
+        width: 100%;
+      }
     }
   }
 }

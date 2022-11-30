@@ -68,3 +68,42 @@ async function queryUser(email){
     error
   }
 }
+
+async function queryUserCPF(cpf){
+  const { data, error } = await database
+  .from('users')
+  .select()
+  .eq('cpf', cpf)
+
+  return {
+    data,
+    error
+  }
+}
+
+async function updateUserAmount(cpf, newBalance,  amount, date,  category, title, customer){
+  const { data } = await database
+  .from('users')
+  .select()
+  .eq('cpf', cpf)
+
+  const { error } = await database
+  .from('users')
+  .update({ 
+    balance: newBalance,
+    statement: [
+      ...data[0].statement, {
+        created_at: date,
+        category: category,
+        title: title,
+        customer: customer,
+        amount: amount
+      }
+    ]
+  })
+  .eq('cpf', cpf)
+
+  return {
+    error
+  }
+}

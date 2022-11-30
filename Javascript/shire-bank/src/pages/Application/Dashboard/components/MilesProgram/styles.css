@@ -8,22 +8,40 @@
   font-size: 0.9rem;
   color: #a1a1aa;
 }
-.milesProgram-section .milesProgram-section-options {
+.milesProgram-section .milesProgram-section-about {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
 }
-.milesProgram-section .milesProgram-section-options .milesProgram-section-options-title {
+.milesProgram-section .milesProgram-section-about .milesProgram-section-about-title {
   display: block;
 }
-.milesProgram-section .milesProgram-section-options .milesProgram-section-options-subtitle {
-  display: block;
+.milesProgram-section .milesProgram-section-about .milesProgram-section-about-paragraph {
   margin-top: 1rem;
   color: #a1a1aa;
 }
-.milesProgram-section .milesProgram-section-options div {
+.milesProgram-section .milesProgram-section-about div {
   border: 2px solid #B83280;
   border-radius: 8px;
   padding: 1rem;
+}
+.milesProgram-section .milesProgram-section-about button {
+  font-family: "Alexandria", sans-serif;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(53, 50, 218);
+  border: 1px solid rgb(32, 30, 192);
+  color: #f4f4f5;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+.milesProgram-section .milesProgram-section-about button:hover {
+  transform: scale(1.025);
+}
+.milesProgram-section .milesProgram-section-about button a {
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */

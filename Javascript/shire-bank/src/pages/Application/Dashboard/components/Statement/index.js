@@ -7,7 +7,7 @@ function Statement() {
     <h3>Histórico</h3>
     <div class="statement-search">
       <img src="../../../assets/icon-search.png" alt="">
-      <input type="text" class="statement-input" placeholder="Buscar por cliente" oninput="showListStatement(event)">
+      <input type="text" class="statement-input" placeholder="Buscar por cliente" id="searchCustomer" oninput="showListStatement(event)">
     </div>
 
     <div class="statement-cards" id="statement-cards">
@@ -15,13 +15,13 @@ function Statement() {
   </div>
 </section>
   `
-  showListStatement(event)
+  showListStatement()
 }
 
-async function showListStatement(event) {
+async function showListStatement() {
   document.querySelector('#statement-cards').innerHTML = ''
   const userData = await userCurrent()
-  const newList = userData.statement.filter(element => ((element.customer).toLowerCase()).includes((event.target.value).toLowerCase()))
+  const newList = userData.statement.filter( element => ((element.customer).toLowerCase()).includes((document.querySelector('#searchCustomer').value).toLowerCase()))
 
   return newList.forEach(element => {
     document.querySelector('#statement-cards').innerHTML += `

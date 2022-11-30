@@ -45,4 +45,14 @@
 }
 .loan-section .loan-section-options .loan-section-options-cards button:hover {
   transform: scale(1.02);
+}
+
+@media only screen and (max-width: 640px) {
+  .loan-section .loan-section-title {
+    font-size: 1.1rem;
+  }
+  .loan-section .loan-section-options .loan-section-options-cards .loan-section-options-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=styles.css.map */

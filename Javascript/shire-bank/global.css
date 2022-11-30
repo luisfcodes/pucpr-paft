@@ -60,4 +60,23 @@ a {
 .button-primary-color:hover::before {
   background: linear-gradient(140deg, rgb(66, 3, 47) 0%, rgb(71, 6, 51) 50%, rgb(68, 5, 49) 68%, rgb(75, 5, 53) 100%);
   box-shadow: 1px 1px 25px rgb(184, 50, 128);
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  color: #f4f4f5;
+}
+
+.message-success {
+  background-color: #15803d;
+}
+
+.message-error {
+  background-color: #ef4444;
 }/*# sourceMappingURL=global.css.map */

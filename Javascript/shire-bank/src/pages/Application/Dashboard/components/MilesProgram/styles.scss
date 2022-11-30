@@ -13,18 +13,17 @@
     color: $gray-400;
   }
 
-  .milesProgram-section-options {
+  .milesProgram-section-about {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-top: 2rem;
 
-    .milesProgram-section-options-title {
+    .milesProgram-section-about-title {
       display: block;
     }
 
-    .milesProgram-section-options-subtitle {
-      display: block;
+    .milesProgram-section-about-paragraph {
       margin-top: 1rem;
       color: $gray-400;
     }
@@ -33,6 +32,28 @@
       border: 2px solid $pink;
       border-radius: 8px;
       padding: 1rem;
+    }
+
+    button {
+        font-family: 'Alexandria', sans-serif;
+        padding: .5rem 1rem;
+        margin-top: 1rem;
+        width: 100%;
+        border-radius: 8px;
+        background-color: $blue-300;
+        border: 1px solid $blue-500;
+        color: $gray-100;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        transition: all .4s;
+
+        &:hover {
+          transform: scale(1.025);
+        }
+
+        a {
+          color: $white;
+        }
     }
   }
 }

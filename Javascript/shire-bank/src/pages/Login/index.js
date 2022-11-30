@@ -12,8 +12,8 @@ function registerDOM() {
         </div>
       
         <form action="#" onSubmit="registerValidations(event)">
-          <span class="hidden login-content-form-message login-content-form-message-error" >E-mail ou CPF já cadastrado.</span>
-          <span class="hidden login-content-form-message login-content-form-message-success" >Conta cadastrada com sucesso, você será redirecionado a página de login em breve.</span>
+          <span class="hidden message message-error" id="messageErrorRegister">E-mail ou CPF já cadastrado.</span>
+          <span class="hidden message message-success" id="messageSuccessRegister">Conta cadastrada com sucesso, você será redirecionado a página de login em breve.</span>
 
           <div>
             <label for="name">Nome</label>
@@ -72,7 +72,7 @@ function loginDOM() {
   </div>
 
   <form action="#" onSubmit="loginValidations(event)">
-    <span class="hidden login-content-form-message login-content-form-message-error" ></span>
+    <span class="hidden message message-error" id="messageError"></span>
     <div>
       <label for="email">Email</label>
       <input type="email" id="email" required>
@@ -131,13 +131,13 @@ async function registerValidations(event) {
       if(error) {
         throw error.message
       } else {
-        document.querySelector('.login-content-form-message-success').classList.remove('hidden')
+        document.querySelector('#messageSuccessRegister').classList.remove('hidden')
         setTimeout(() => {
           loginDOM()
         }, 3000)
       } 
     } catch (err) {
-      document.querySelector('.login-content-form-message-error').classList.remove('hidden')
+      document.querySelector('#messageErrorRegister').classList.remove('hidden')
       throw new Error(err)
     }
   }
@@ -152,7 +152,7 @@ async function loginValidations(event){
 
   if(emailValidation) {
     try {
-      const errorMessageElement = document.querySelector('.login-content-form-message-error')
+      const errorMessageElement = document.querySelector('#messageError')
       const { data, error } = await queryUser(email.value)
 
       if(error) {
@@ -161,7 +161,7 @@ async function loginValidations(event){
         errorMessageElement.textContent = 'Usuário não encontrado.'
         errorMessageElement.classList.remove('hidden')
         setTimeout(() => {
-          document.querySelector('.login-content-form-message-error').classList.add('hidden')
+          document.querySelector('#messageError').classList.add('hidden')
         }, 3000)
       } else {
         if(data[0].password === password.value){
@@ -171,7 +171,7 @@ async function loginValidations(event){
           errorMessageElement.textContent = "Senha incorreta, tente novamente ou clique em 'Esqueceu a senha?'."
           errorMessageElement.classList.remove('hidden')
           setTimeout(() => {
-            document.querySelector('.login-content-form-message-error').classList.add('hidden')
+            document.querySelector('#messageError').classList.add('hidden')
           }, 3000)
         }
       } 

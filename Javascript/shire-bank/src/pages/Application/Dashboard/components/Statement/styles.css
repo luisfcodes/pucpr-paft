@@ -46,4 +46,24 @@
 }
 .statement-section .statement-cards .statement-card .income {
   color: #15803d;
+}
+
+@media only screen and (max-width: 1280px) {
+  .statement-section .statement-search .statement-input {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .statement-section .statement-search .statement-input {
+    width: 100%;
+  }
+  .statement-section .statement-cards .statement-card .statement-card-title {
+    font-size: 0.9rem;
+  }
+  .statement-section .statement-cards .statement-card .statement-card-customer {
+    font-size: 0.8rem;
+  }
+  .statement-section .statement-cards .statement-card .statement-card-price {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

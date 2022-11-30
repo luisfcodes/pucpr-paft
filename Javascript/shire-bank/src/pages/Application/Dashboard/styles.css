@@ -12,6 +12,26 @@ aside {
   width: 250px;
   color: #fff;
   min-height: 100vh;
+  position: relative;
+  transition: all 0.4s;
+}
+aside .button-menu {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #B83280;
+  right: -20px;
+  z-index: 1;
+  border-color: transparent;
+}
+aside .button-menu :hover {
+  cursor: pointer;
+}
+aside .button-menu::before {
+  content: "<";
+  font-size: 2rem;
+  color: #f4f4f5;
 }
 aside .aside-container {
   width: 250px;
@@ -23,7 +43,7 @@ aside .aside-container {
   height: 100%;
 }
 aside div:first-child {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 aside .aside-button-option {
   display: flex;
@@ -43,6 +63,15 @@ aside .aside-button-option button {
 aside .aside-button-option button:hover {
   color: #fff;
   border-color: #fff;
+}
+aside.active {
+  width: 25px;
+}
+aside.active .aside-container {
+  display: none;
+}
+aside.active .button-menu::before {
+  content: ">";
 }
 
 .root {
@@ -104,6 +133,7 @@ aside .aside-button-option button:hover {
 .transfer-and-payments-section .transfer-and-payments-section-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: transparent;
   gap: 0.5rem;
   border: 2px solid transparent;
@@ -132,51 +162,63 @@ aside .aside-button-option button:hover {
 .transfer-and-payments-section-form {
   margin-top: 2rem;
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group {
+  display: flex;
   justify-content: space-between;
   gap: 1rem;
 }
-.transfer-and-payments-section-form .transfer-and-payments-section-form-resume {
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group .transfer-and-payments-section-form-resume {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  width: 50%;
+  width: 60%;
   border-radius: 8px;
   color: #f4f4f5;
-  padding: 0 1rem;
+  padding: 1rem;
   border: 2px solid #B83280;
 }
-.transfer-and-payments-section-form .transfer-and-payments-section-form-resume .transfer-and-payments-section-form-resume-title {
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group .transfer-and-payments-section-form-resume .transfer-and-payments-section-form-resume-title {
   font-size: 1.3rem;
   color: #B83280;
 }
-.transfer-and-payments-section-form .transfer-and-payments-section-form-resume .transfer-and-payments-section-form-resume-group {
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group .transfer-and-payments-section-form-resume .transfer-and-payments-section-form-resume-group {
   display: flex;
   justify-content: space-between;
 }
-.transfer-and-payments-section-form .transfer-and-payments-section-form-resume .transfer-and-payments-section-form-resume-group span:last-child {
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group .transfer-and-payments-section-form-resume .transfer-and-payments-section-form-resume-group span:last-child {
   color: #B83280;
 }
-.transfer-and-payments-section-form form {
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group form {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.transfer-and-payments-section-form form .transfer-and-payments-section-form-input-group {
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group form .warning {
+  font-size: 0.8rem;
+  color: #ef4444;
+}
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group form .hidden {
+  display: none;
+}
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group form .transfer-and-payments-section-form-input-group {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   color: #d4d4d8;
 }
-.transfer-and-payments-section-form form .transfer-and-payments-section-form-input-group input {
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group form .transfer-and-payments-section-form-input-group input {
   padding: 0.4rem;
   border-radius: 8px;
   outline-color: #d4d4d8;
   border: 2px solid #d4d4d8;
   font-family: "Alexandria", sans-serif;
 }
-.transfer-and-payments-section-form form button {
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group form button {
   font-family: "Alexandria", sans-serif;
   padding: 0.5rem 1rem;
   margin: 0 auto;
@@ -189,9 +231,184 @@ aside .aside-button-option button:hover {
   text-transform: uppercase;
   transition: all 0.4s;
 }
-.transfer-and-payments-section-form form button:hover {
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group form button:hover {
   transform: scale(1.05);
 }
-.transfer-and-payments-section-form form button a {
+.transfer-and-payments-section-form .transfer-and-payments-section-form-group form button a {
   color: #fff;
+}
+
+.root-payment-invoice {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.root-payment-invoice .root-payment-invoice-total {
+  margin: 0 auto;
+  background-color: #B83280;
+  padding: 0.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+.root-payment-invoice .statement-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.root-payment-invoice .statement-card .statement-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.root-payment-invoice .statement-card .statement-card-customer {
+  font-size: 0.9rem;
+  color: #a1a1aa;
+  margin-left: 0.5rem;
+}
+.root-payment-invoice .statement-card .statement-card-price {
+  letter-spacing: 0.8px;
+  margin-left: 0.5rem;
+}
+.root-payment-invoice .statement-card .expense {
+  color: #b91c1c;
+}
+.root-payment-invoice .statement-card .income {
+  color: #15803d;
+}
+.root-payment-invoice button {
+  font-family: "Alexandria", sans-serif;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  width: 95%;
+  border-radius: 8px;
+  background-color: rgb(53, 50, 218);
+  border: 1px solid rgb(32, 30, 192);
+  color: #f4f4f5;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+.root-payment-invoice button:hover {
+  transform: scale(1.05);
+}
+.root-payment-invoice button a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1280px) {
+  main {
+    gap: 1rem;
+  }
+  .root-xl {
+    max-width: 60%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  html, body {
+    font-size: 15px;
+  }
+  .root {
+    max-width: 60%;
+  }
+  .transfer-and-payments-section .transfer-and-payments-section-title {
+    font-size: 1.1rem;
+  }
+  .transfer-and-payments-section-form .transfer-and-payments-section-form-group .transfer-and-payments-section-form-resume .transfer-and-payments-section-form-resume-title {
+    font-size: 1.2rem;
+  }
+  .transfer-and-payments-section-form .transfer-and-payments-section-form-group .transfer-and-payments-section-form-resume .transfer-and-payments-section-form-resume-group {
+    font-size: 0.8rem;
+  }
+  .transfer-and-payments-section-form .transfer-and-payments-section-form-group form button {
+    font-size: 1rem;
+  }
+  .transfer-and-payments-section-form .transfer-and-payments-section-form-group form button:hover {
+    transform: scale(1.02);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .root {
+    max-width: 70%;
+  }
+  .transfer-and-payments-section .transfer-and-payments-section-title {
+    font-size: 1rem;
+  }
+  .payments-xl {
+    gap: 1rem;
+  }
+  .transfer-and-payments-section-form .transfer-and-payments-section-form-group {
+    flex-direction: column;
+  }
+  .transfer-and-payments-section-form .transfer-and-payments-section-form-group .transfer-and-payments-section-form-resume {
+    width: 100%;
+  }
+  .transfer-and-payments-section-form .transfer-and-payments-section-form-group .transfer-and-payments-section-form-resume .transfer-and-payments-section-form-resume-title {
+    font-size: 1.2rem;
+  }
+  .transfer-and-payments-section-form .transfer-and-payments-section-form-group .transfer-and-payments-section-form-resume .transfer-and-payments-section-form-resume-group {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  html, body {
+    font-size: 14px;
+  }
+  main {
+    position: relative;
+  }
+  aside {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+  }
+  aside .button-menu {
+    right: 0;
+    margin-right: 0.5rem;
+  }
+  aside .aside-button-option button {
+    font-size: 1.1rem;
+  }
+  aside.active {
+    width: 15px;
+  }
+  aside.active .button-menu {
+    right: -18px;
+    margin-right: 0;
+  }
+  .root {
+    max-width: 80%;
+    padding: 1rem 1rem;
+    gap: 1.5rem;
+  }
+  .section-container .section-content h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .section-container .section-content h3 + span {
+    font-size: 0.9rem;
+  }
+  .transfer-and-payments-section {
+    gap: 1rem;
+  }
+  .transfer-and-payments-section .transfer-and-payments-section-title {
+    font-size: 1rem;
+  }
+  .transfer-and-payments-section .transfer-and-payments-section-card {
+    margin-top: 3.5rem;
+  }
+  .transfer-and-payments-section .transfer-and-payments-section-card img {
+    width: 50px;
+  }
+  .transfer-and-payments-section .transfer-and-payments-section-card span {
+    font-size: 0.9rem;
+  }
+  .transfer-and-payments-section-form .transfer-and-payments-section-form-group .transfer-and-payments-section-form-resume .transfer-and-payments-section-form-resume-group {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

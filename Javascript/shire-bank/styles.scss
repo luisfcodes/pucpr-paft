@@ -252,10 +252,8 @@ footer {
 }
 
 @media only screen and (max-width: 640px) {
-  header {
-    nav {
-      display: none;
-    }
+  html, body {
+    font-size: 14px;
   }
 
   .main-content {
@@ -285,7 +283,7 @@ footer {
   }
 
   .main-content-status {
-    gap: 4rem;
+    gap: 2rem;
     font-size: 2rem;
   }
 
@@ -316,7 +314,7 @@ footer {
     margin-top: 2rem;
 
     .footer-wrapper {
-      gap: 1rem;
+      gap: .5rem;
       align-items: flex-start;
     }
   

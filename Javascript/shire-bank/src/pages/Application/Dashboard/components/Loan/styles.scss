@@ -58,3 +58,20 @@
     }
   }
 }
+
+@media only screen and (max-width: 640px) {
+  .loan-section {
+    .loan-section-title {
+      font-size: 1.1rem;
+    }
+    
+    .loan-section-options {
+      .loan-section-options-cards {  
+        .loan-section-options-card {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
