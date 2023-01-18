@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./services/products.js"></script>
+  <script src="./components/product-list.js" defer></script>
+  <script src="./components/modal.js" defer></script>
+
+  <title>Lista de compras</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="main-title">Lista de Compras</h1>
+  </header>
+
+  <main>
+
+    <div class="disabled modal-container" id="modal">
+      <span class="modal-title">Adicionar novo produto</span>
+
+      <form>
+        <label for="name">Nome</label>
+        <input type="text">
+
+        <label for="quantity"></label>
+      </form>
+    </div>
+
+    <div class="main-search-and-product">
+      <input type="text" id="search">
+      <button onclick="showModal()">+ Novo Produto</button>
+    </div>
+
+    <section class="product-list">
+      <ul>
+      </ul>
+    </section>
+
+  </main>
+</body>
+
+</html>
