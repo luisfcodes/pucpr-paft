@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./components/pokedex/styles.css">
+
+  <script src="./services/pokeapi.js" defer></script>
+  <script src="./components/pokedex/index.js" defer></script>
+
+  <title>Pokedex</title>
+</head>
+<body>
+  <main>
+    <section class="pokedex-container">
+      <div class="pokedex-content">
+        <div class="pokedex-image">
+          <img id="pokedex-pokemon-image">
+        </div>
+        <div class="pokedex-description" id="pokedex-description"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
