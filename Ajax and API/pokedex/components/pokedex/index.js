@@ -8,7 +8,6 @@ let indexPokemon = 0;
 
 function loadPokemon(){
     const pokemonList = JSON.parse(this.responseText).results
-    qualquercoisa = pokemonList;
     getPokemon(pokemonList[indexPokemon].url).addEventListener("load", function (){
       const pokemon = JSON.parse(this.responseText)
       pokemonImageElement.setAttribute('src', pokemon.sprites.other.dream_world.front_default)
