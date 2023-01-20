@@ -12,7 +12,7 @@
   align-items: center;
   background-color: #dc2626;
   width: 400px;
-  height: 650px;
+  height: 700px;
   border-radius: 8px;
   padding: 1rem;
 }
@@ -88,4 +88,23 @@
 
 .pokedex-description section ul li div span{
   margin-top: 4px;
+}
+
+
+.pokedex-arrows{
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.6rem;
+}
+.pokedex-arrows img{
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.pokedex-arrows img:hover{
+  transform: scale(1.1);
+}
+
+.pokedex-arrows img:active{
+  transform: scale(0.9);
 }

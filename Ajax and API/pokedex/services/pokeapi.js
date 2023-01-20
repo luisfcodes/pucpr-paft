@@ -1,6 +1,6 @@
 function getPokemons() {
   const req = new XMLHttpRequest();
-  req.open("GET", "https://pokeapi.co/api/v2/pokemon");
+  req.open("GET", "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151");
   req.send();
   return req
 }

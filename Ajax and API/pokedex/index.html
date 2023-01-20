@@ -6,7 +6,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Press+Start+2P&display=swap&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/global.css">
@@ -19,14 +20,27 @@
 </head>
 <body>
   <main>
-    <section class="pokedex-container">
-      <div class="pokedex-content">
-        <div class="pokedex-image">
-          <img id="pokedex-pokemon-image">
-        </div>
-        <div class="pokedex-description" id="pokedex-description"></div>
-      </div>
+    <section class="home-content "  id="home-page">
+      <img src="./assets/banner.png" class="banner" alt="Escrita de pokedex em tamanho grande">
+      <button onclick="showPokedex()" class="home-button">Iniciar</button>
     </section>
+    <div class= "disabled" id="pokedex">
+      <section class="pokedex-container">
+        <div class="pokedex-content">
+          <div class="pokedex-image">
+            <img id="pokedex-pokemon-image">
+          </div>
+          <div class="pokedex-description" id="pokedex-description"></div>
+          <div class="pokedex-arrows">
+            <img src="./assets/left-arrow.png" id="arrow-left">
+            <img src="./assets/right-arrow.png"id="arrow-right">
+          </div>
+        </div>
+
+      </section>
+ 
+    </div>
+    
   </main>
 </body>
 </html>
