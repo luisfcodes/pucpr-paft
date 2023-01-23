@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Solitreo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <title>Servidor - Flask</title>
+</head>
+
+<body>
+  <main>
+    <h1>Requisições com servidor Flask</h1>
+
+    <div class="form-container">
+      <span class="form-title">Exercicío 1</span>
+      <form onsubmit="getDateInterval(event)">
+        <div>
+          <label for="primary-date">Data inicial</label>
+          <input type="date" id="primary-date" required>
+        </div>
+  
+        <div>
+          <label for="secondary-date">Data final</label>
+          <input type="date" id="secondary-date" required>
+        </div>
+  
+        <button>Enviar</button>
+      </form>
+  
+      <div id="response-ex-one" class="form-response disabled">
+        <span class="form-title">Resultado</span>
+        <div id="form-response-content" class="form-response-content"></div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <span class="form-title">Exercicío 2</span>
+      <form onsubmit="getNumbers(event)">
+
+        <div>
+          <label for="numbersList">Lista de números</label>
+          <input type="text" id="numbersList" required>
+        </div>
+  
+        <button>Enviar</button>
+      </form>
+  
+      <div id="response-ex-one" class="form-response disabled">
+        <span class="form-title">Resultado</span>
+        <div id="form-response-content" class="form-response-content"></div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
