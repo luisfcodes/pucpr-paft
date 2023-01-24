@@ -32,3 +32,20 @@ def calcNumbers(numbers):
         'descending': sorted(numbersListInt, reverse=True),
         'evenList': list(even)
     }
+
+@app.route("/phrase/<string:phrase>")
+def phraseConverter(phrase):
+
+    resultant_string = ""
+
+    for character in phrase:
+      if character.lower() == "a" or character.lower() == "e" or character.lower() == "o" or character.lower() == "u":
+        resultant_string += "i"
+      elif character.lower() == "á" or character.lower() == "é" or character.lower() == "ó" or character.lower() == "ú":
+        resultant_string += "í"
+      else:
+        resultant_string += character
+
+    return {
+        'result': resultant_string,
+    }
