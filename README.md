@@ -15,3 +15,4 @@
 - ⚙️ [Leveling, TDD and DDD](https://github.com/luisfcodes/pucpr-paft/tree/main/Leveling%2C%20TDD%20and%20DDD)
 - 🎨 [HTML and CSS](https://github.com/luisfcodes/pucpr-paft/tree/main/HTML%20and%20CSS)
 - 🎯 [Javascript](https://github.com/luisfcodes/pucpr-paft/tree/main/Javascript)
+- 🔗 [Ajax and API](https://github.com/luisfcodes/pucpr-paft/tree/main/Ajax%20and%20API)
