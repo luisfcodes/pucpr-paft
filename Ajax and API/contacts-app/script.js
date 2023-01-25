@@ -2,9 +2,14 @@ function updateList(res){
   document.querySelector('#contacts_list').innerHTML = ''
     res.forEach(element => {
       document.querySelector('#contacts_list').innerHTML += `
-        <div>
-          <span>${element.id}</span> - <span>${element.name}</span> - <span>${element.number}</span>
-          <button onclick="showFormUpdate(${element.id})">Editar</button> <button onclick="deleteContact(${element.id})">Deletar</button>
+        <div class="contacts-content">
+          <div class="name-description"><span>${element.name}</span></div>  <span class="number-description">${element.number}</span>
+          <button onclick="showFormUpdate(${element.id})" class="button-icons">
+            <img src="./icon/edit-icon.png">
+          </button> 
+          <button onclick="deleteContact(${element.id})" class="button-icons">
+          <img src="./icon/trash-icon.png">
+          </button>
 
           <div style="display: none" id=${element.id}>
             <input type="text" id="${element.id}${element.id}" placeholder="Nome do Contato">
@@ -41,9 +46,11 @@ function addContact(event){
       }
     )
   }).then(res => res.json().then(res => {
+    closeModal();
     updateList(res)
   }))
 
+  
 }
 
 function deleteContact(id){
@@ -75,4 +82,12 @@ function updateContact(id, number){
 
 function showFormUpdate(id){
   document.getElementById(id).style.display = 'block'
+}
+
+function closeModal(){
+  document.querySelector('.modal-container').classList.add('hidden')
+}
+
+function openModal(){
+  document.querySelector('.modal-container').classList.remove('hidden')
 }

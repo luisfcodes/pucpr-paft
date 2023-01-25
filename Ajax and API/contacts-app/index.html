@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./script.js"></script>
+  <link rel="stylesheet" href="index.css">
   <title>Document</title>
 </head>
 <body>
   <main>
-    <div id="contacts_list">
+    <h1 class="h1-title">Lista de Contatos</h1>
+    <button onclick="openModal()">Adicionar contato</button>
+    <div id="contacts_list" class="contact-container">
 
     </div>
 
     <br>
-
-    <form onsubmit="addContact(event)">
-      <input type="text" id="name" placeholder="Nome do Contato">
-      <input type="tel" id="number" maxlength="11" placeholder="Número do Contato">
-      <button>Adicionar Contato</button>
-    </form>
+    <div class="modal-container hidden">
+      <form onsubmit="addContact(event)" class="modal-content">
+        <h1>Adicionar Contato</h1>
+        <button type="button" class="button-exit" onclick="closeModal()"><img src="./icon/exit-icon.png"></button>
+        <input type="text" id="name" placeholder="Nome do Contato">
+        <input type="tel" id="number" maxlength="11" placeholder="Número do Contato">
+        <button>Adicionar Contato</button>
+      </form>
+    </div>
+    
   </main>
 </body>
 </html>
