@@ -59,6 +59,4 @@ def updateContact(id):
       contact['name'] = data['name']
       contact['number'] = data['number']
 
-  print(contacts)
-
   return contacts
