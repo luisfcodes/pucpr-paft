@@ -44,6 +44,10 @@
   flex: 1;
 }
 
+.name-description:hover{
+  font-weight: 500;
+}
+
 .number-description {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
@@ -70,4 +74,5 @@
 
 .button-icons:hover {
   transform: scale(1.1);
+  margin-right: 2px;
 }
