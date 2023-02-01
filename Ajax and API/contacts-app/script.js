@@ -3,7 +3,6 @@ function updateList(res) {
 
   document.querySelector('#contacts_list').innerHTML = ''
   res.forEach(element => {
-    const numberString = element.number.toString()
 
     document.querySelector('#contacts_list').innerHTML += `
         <div class="contacts-content">
@@ -12,7 +11,7 @@ function updateList(res) {
             <span>${element.name}</span>
           </div>
           <span class="number-description">
-            (${numberString.substr(0, 2)}) ${numberString.substr(2, 5)} - ${numberString.substr(7, 4)}
+            (${element.phone.substr(0, 2)}) ${element.phone.substr(2, 5)} - ${element.phone.substr(7, 4)}
           </span>
           <button onclick="showFormUpdateContact(${element.id}, '${element.name}', ${element.number})" class="button-icons">
             <img src="./images/icons/edit-icon.png">
@@ -24,6 +23,7 @@ function updateList(res) {
       `
   });
 }
+console.log('load')
 
 fetch("http://127.0.0.1:5000/contacts").then(res => res.json().then(res => {
   updateList(res)
@@ -44,20 +44,17 @@ function addContact(event) {
     body: JSON.stringify(
       {
         'name': inputNameElement.value,
-        'number': inputNumberElement.value.replace(/\D/g,"")
+        'phone': inputNumberElement.value.replace(/\D/g,"")
       }
     )
-  }).then(res => res.json().then(res => {
-    closeModal();
-    updateList(res)
-  }))
+  })//.then(res => console.log(res))
 }
 
 function deleteContact(id) {
   fetch(`http://127.0.0.1:5000/contacts/${id}`, {
     method: 'DELETE'
   }).then(res => res.json().then(res => {
-    updateList(res)
+    //updateList(res)
   }))
 }
 
@@ -95,7 +92,7 @@ function updateContact(event,id) {
     )
   }).then(res => res.json().then(res => {
     closeModal()
-    updateList(res)
+   // updateList(res)
   }))
 }
 
