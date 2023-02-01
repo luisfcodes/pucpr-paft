@@ -13,7 +13,7 @@ function updateList(res) {
           <span class="number-description">
             (${element.phone.substr(0, 2)}) ${element.phone.substr(2, 5)} - ${element.phone.substr(7, 4)}
           </span>
-          <button onclick="showFormUpdateContact(${element.id}, '${element.name}', ${element.number})" class="button-icons">
+          <button onclick="showFormUpdateContact(${element.id}, '${element.name}', ${element.phone})" class="button-icons">
             <img src="./images/icons/edit-icon.png">
           </button> 
           <button onclick="deleteContact(${element.id})" class="button-icons">
@@ -23,7 +23,6 @@ function updateList(res) {
       `
   });
 }
-console.log('load')
 
 fetch("http://127.0.0.1:5000/contacts").then(res => res.json().then(res => {
   updateList(res)
@@ -47,14 +46,38 @@ function addContact(event) {
         'phone': inputNumberElement.value.replace(/\D/g,"")
       }
     )
-  })//.then(res => console.log(res))
+  }).then(res => res.json().then(res => {
+    closeModal()
+    updateList(res)
+  }))
+}
+
+function updateContact(event,id) {
+  event.preventDefault();
+
+  fetch(`http://127.0.0.1:5000/contacts/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(
+      {
+        'name': document.getElementById("modal_name").value,
+        'number': document.getElementById("modal_number").value.replace(/\D/g,"")
+      }
+    )
+  }).then(res => res.json().then(res => {
+    closeModal()
+    updateList(res)
+  }))
 }
 
 function deleteContact(id) {
   fetch(`http://127.0.0.1:5000/contacts/${id}`, {
     method: 'DELETE'
   }).then(res => res.json().then(res => {
-    //updateList(res)
+    updateList(res)
   }))
 }
 
@@ -75,26 +98,7 @@ function showFormAddContact() {
   document.querySelector('#modal-submit-form').setAttribute('onsubmit',`addContact(event)`)
 }
 
-function updateContact(event,id) {
-  event.preventDefault();
 
-  fetch(`http://127.0.0.1:5000/contacts/${id}`, {
-    method: 'PUT',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(
-      {
-        'name': document.getElementById("modal_name").value,
-        'number': document.getElementById("modal_number").value.replace(/\D/g,"")
-      }
-    )
-  }).then(res => res.json().then(res => {
-    closeModal()
-   // updateList(res)
-  }))
-}
 
 function closeModal() {
   document.querySelector('#modal_name').value = ''
