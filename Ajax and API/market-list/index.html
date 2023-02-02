@@ -8,50 +8,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/modal.css">
-  <script src="./services/products.js"></script>
+
+  <script src="./services/products.js" defer></script>
   <script src="./components/product-list.js" defer></script>
   <script src="./components/modal.js" defer></script>
+  <script src="./script.js" defer></script>
 
   <title>Lista de compras</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <div class="disabled modal-container" id="modal">
-    <section class="modal-content">
-      <button class="modal-button-close">X</button>
-      <span class="modal-title">Adicionar novo produto</span>
-
-      <form>
-        <div class="modal-input">
-          <label for="name">Nome</label>
-          <input type="text">
-        </div>
-
-        <div class="modal-inputs-group">
-          <div class="modal-input">
-            <label for="quantity">Quantidade</label>
-            <input type="number" class="modal-input-quantity">
-          </div>
-
-          <div class="modal-input">
-            <label for="unit_type">Tipo de medida</label>
-            <select name="unit_type" id="unit_type">
-              <option selected disabled>Selecione</option>
-              <option value="kg">Kg</option>
-              <option value="und">Unidade</option>
-            </select>
-          </div>
-        </div>
-
-        <button class="modal-button">Cadastrar</button>
-      </form>
-    </section>
+    
   </div>
 
   <header>

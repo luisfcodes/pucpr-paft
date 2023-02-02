@@ -1,95 +1,96 @@
 main {
-    max-width: 50%;
-    margin: 0 auto;
-    padding: 1rem;
-    position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .main-search-and-product {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.main-search-and-product input, .main-search-and-product button {
-    padding: 0.5rem;
-    border-radius: 4px;
+.main-search-and-product input,
+.main-search-and-product button {
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 
 .main-search-and-product input {
-    border: none;
-    flex: 1;
-    outline: none;
-    font-size: 1rem;
+  border: none;
+  flex: 1;
+  outline: none;
+  font-size: 1rem;
 }
 
 .main-search-and-product button {
-    background-color: #22c55e;
-    color: var(--gray-900);
-    font-size: .9rem;
-    transition: all .2s;
+  background-color: #22c55e;
+  color: var(--gray-900);
+  font-size: .9rem;
+  transition: all .2s;
 }
 
 .main-search-and-product button:hover {
-    filter: brightness(.9);
+  filter: brightness(.9);
 }
 
 .product-list {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .product-list ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: .4rem;
-    background-color: var(--gray-100);
-    color: var(--gray-900);
-    border-radius: 4px;
-    padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  background-color: var(--gray-100);
+  color: var(--gray-900);
+  border-radius: 4px;
+  padding: 1rem;
 }
 
 .product-list li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.4rem;
-    background-color: var(--gray-200);
-    border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem;
+  background-color: var(--gray-200);
+  border-radius: 4px;
 }
 
-.list-item-title, .list-item-delete {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
+.list-item-title,
+.list-item-delete {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 
 .list-item-delete span {
-    background-color: #f97316;
-    min-width: 100px;
-    text-align: center;
-    color: var(--gray-100);
-    padding: 0.2rem 1rem;
-    border-radius: 4px;
+  background-color: #f97316;
+  min-width: 100px;
+  text-align: center;
+  color: var(--gray-100);
+  padding: 0.2rem 1rem;
+  border-radius: 4px;
 }
 
 .list-item-delete button {
-    border: none;
-    background-color: #fda4af;
-    padding: .1rem;
-    border-radius: 4px;
+  border: none;
+  background-color: #fda4af;
+  padding: .1rem;
+  border-radius: 4px;
 }
 
 .list-item-delete button:hover {
-    background-color: #fb7185;
+  background-color: #fb7185;
 }
 
 
 .list-item-delete button img {
-    width: 25px;
-    height: 20px;
+  width: 25px;
+  height: 20px;
 }
