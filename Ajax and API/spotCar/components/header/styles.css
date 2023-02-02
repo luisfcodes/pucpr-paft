@@ -1,0 +1,17 @@
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

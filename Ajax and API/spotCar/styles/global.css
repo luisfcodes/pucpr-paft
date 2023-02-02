@@ -1,0 +1,20 @@
+:root {
+  --white: #fff;
+}
+
+body {
+  background-color: var(--white);
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
