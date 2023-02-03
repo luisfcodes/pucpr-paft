@@ -1,15 +1,15 @@
 document.querySelector('body').insertAdjacentHTML('afterbegin', `
   <header>
     <div class="container">
-      <img src="./assets/logo.png" alt="">
+      <img src="../assets/logo.png" alt="">
     
       <nav>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#">Carros</a>
+            <a href="./pages/cars.html">Carros</a>
           </li>
           <li>
             <a href="#">Clientes</a>
