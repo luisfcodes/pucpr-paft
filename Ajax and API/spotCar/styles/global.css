@@ -1,5 +1,21 @@
 :root {
   --white: #fff;
+
+  --gray-100: #f5f5f5;
+  --gray-300: #d4d4d4;
+  --gray-500: #737373;
+  --gray-700: #404040;
+  --gray-900: #171717;
+
+  --blue-100: #dbeafe;
+  --blue-300: #93c5fd;
+  --blue-500: #3b82f6;
+  --blue-700: #1d4ed8;
+  --blue-900: #1e3a8a;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,9 +28,37 @@ button {
   font-family: 'Poppins', sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   width: 100%;
   max-width: 1246px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-bottom: 80px;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }

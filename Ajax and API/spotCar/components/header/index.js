@@ -1,14 +1,22 @@
 document.querySelector('body').insertAdjacentHTML('afterbegin', `
   <header>
     <div class="container">
-      <h1>LOGO</h1>
+      <img src="./assets/logo.png" alt="">
     
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Carros</li>
-          <li>Clientes</li>
-          <li>Sobre</li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Carros</a>
+          </li>
+          <li>
+            <a href="#">Clientes</a>
+          </li>
+          <li>
+            <a href="#">Sobre</a>
+          </li>
         </ul>
       </nav>
     </div>
