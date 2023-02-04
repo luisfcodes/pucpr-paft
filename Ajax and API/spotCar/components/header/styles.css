@@ -3,6 +3,7 @@ header {
   z-index: 2;
   background-color: var(--white);
   width: 100%;
+  top: 0;
 }
 
 header::after {
@@ -47,4 +48,29 @@ header .container nav ul li a:hover::after{
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-navigation button {
+  box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+  background-color: var(--white);
+  border: none;
+  border-radius: 4px;
+  padding: .25rem 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all .4s ease-in-out;
+  font-size: 1rem;
+  color: var(--gray-700);
+}
+
+.header-navigation button:hover {
+  background-color: var(--blue-900);
+  color: var(--white);
 }

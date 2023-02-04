@@ -18,9 +18,15 @@ html {
   scroll-behavior: smooth;
 }
 
+body, html {
+  height: 100%;
+}
+
 body {
   background-color: var(--white);
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 button {
@@ -41,10 +47,9 @@ a{
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
+  margin-top: 5rem;
   padding-bottom: 80px;
+  flex: 1;
 }
 
 .bounce {

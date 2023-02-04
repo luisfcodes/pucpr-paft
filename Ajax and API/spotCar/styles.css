@@ -5,7 +5,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  margin-top: 5rem;
 }
 
 .banner-home::after {
@@ -67,20 +66,28 @@
   left: 50%;
 }
 
-.content-home:nth-child(2) {
-  padding-top: 7rem;
-  margin-top: -5rem;
+.cars-home {
+  padding-top: 7.5rem;
+}
+
+.cars-home h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--blue-900);
+  font-weight: 600;
 }
 
 .content-home {
+  margin-top: 5rem;
   display: flex;
   gap: 5rem;
 }
 
 .content-home img {
-  height: 427px;
-  min-width: 640px;
+  height: 250px;
+  min-width: 380px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .content-home .content-home-description {
@@ -105,4 +112,3 @@
 .content-home .content-home-description p:nth-child(2) {
   margin-top: 2rem;
 }
-
