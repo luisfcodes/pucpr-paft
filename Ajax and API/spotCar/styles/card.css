@@ -5,6 +5,29 @@
   margin-top: 2rem;
 }
 
+.card-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header span{
+  padding: .25rem .45rem;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.15px;
+}
+
+.card-header-available span {
+  background-color: var(--green-600);
+}
+
+.card-header-rented span {
+  background-color: var(--red-600);
+}
+
 .card-container button {
   margin-top: 1.5rem;
   width: 100%;
