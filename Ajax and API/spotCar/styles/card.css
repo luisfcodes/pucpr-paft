@@ -40,6 +40,7 @@
   letter-spacing: 2px;
   background-color: var(--white);
   color: var(--gray-700);
+  transition: all .4s ease-in-out;
 }
 
 .card-container button:hover {
@@ -85,7 +86,7 @@
 .card-description-group div {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: .4rem;
 }
 
 .card-description div span {

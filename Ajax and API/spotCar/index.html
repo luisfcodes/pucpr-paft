@@ -17,26 +17,32 @@
   <link rel="stylesheet" href="./styles/card.css">
   <link rel="stylesheet" href="./components/header/styles.css">
   <link rel="stylesheet" href="./components/footer/styles.css">
+  <link rel="stylesheet" href="./components/modal/styles.css">
   <link rel="stylesheet" href="styles.css">
 
   <!-- Components -->
+  <script src="./services/script.js"></script>
   <script src="./components/header/index.js" defer></script>
   <script src="./components/footer/index.js" defer></script>
-  <script src="./script.js" defer></script>
+  <script src="./components/modal/index.js" defer></script>
+  <script src="./shared/script.js" defer></script>
+  <script src="./index.js" defer></script>
 
 </head>
 
 <body>
 
   <main>
+    <section id="modal-container" class="hidden modal-container"></section>
     <section class="banner-home">
       <div>
         <h1>Sua jornada começa aqui.</h1>
-        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At assumenda illum debitis dolore unde eaque.</span>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At assumenda illum debitis dolore unde
+          eaque.</span>
         <a href="./pages/cars.html">
           <button>Alugar</button>
         </a>
-        
+
       </div>
       <a href="#content-home">
         <img src="./assets/icons/dropDown-icon.png" alt="Ícone de flecha pra baixo" class="dropDown bounce">
@@ -44,212 +50,28 @@
     </section>
 
     <section class="container cars-home card-container" id="content-home">
-      <h2 >Escolha a opção ideial para sua ocasião</h2>
+      <h2>Escolha a opção ideial para sua ocasião</h2>
 
-      <section id="cars-card-home">
-        <div class="card-content">
-          <div class="card-header card-header-available">
-            <h3>Chevrolet Onix Plus</h3>
-            <span>Disponível</span>
-          </div>
-          <img class="card-banner" src="./assets/images/onix-plus.png" alt="Foto do modelo onix plus">
-  
-          <section class="card-description">
-            <div class="card-description-group">
-              <div>
-                <img src="./assets/icons/seat.png" alt="Ícone de um assento de carro">
-                <span>5 passageiros</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/door-car.png" alt="Ícone de uma porta de carro">
-                <span>4 portas</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/air.png" alt="Ícone representando o vento">
-                <span>Ar condicionado</span>
-              </div>
-            </div>
-  
-            <div class="card-description-group">
-              <div>
-                <img src="./assets/icons/gear-stick.png" alt="Ícone de um câmbio de veículo">
-                <span>Manual</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/engine.png" alt="Ícone de um motor de veículo">
-                <span>1.0</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/suitcase.png" alt="Ícone de uma mala de viagem">
-                <span>1 - 2 malas</span>
-              </div>
-            </div>
-  
-          </section>
-  
-          <button>Reservar</button>
-        </div>
-  
-        <div class="card-content">
-          <div class="card-header card-header-available">
-            <h3>Fiat Mobi</h3>
-            <span>Disponível</span>
-          </div>
-          <img class="card-banner" src="./assets/images/mobi.png" alt="Foto do modelo fiat mobi">
-  
-          <section class="card-description">
-            <div class="card-description-group">
-              <div>
-                <img src="./assets/icons/seat.png" alt="Ícone de um assento de carro">
-                <span>4 passageiros</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/door-car.png" alt="Ícone de uma porta de carro">
-                <span>4 portas</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/air.png" alt="Ícone representando o vento">
-                <span>Ar condicionado</span>
-              </div>
-            </div>
-  
-            <div class="card-description-group">
-              <div>
-                <img src="./assets/icons/gear-stick.png" alt="Ícone de um câmbio de veículo">
-                <span>Manual</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/engine.png" alt="Ícone de um motor de veículo">
-                <span>1.0</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/suitcase.png" alt="Ícone de uma mala de viagem">
-                <span>1 mala</span>
-              </div>
-            </div>
-  
-          </section>
-  
-          <button>Reservar</button>
-        </div>
-  
-        <div class="card-content">
-          <div class="card-header card-header-available">
-            <h3>Peugeot 2008</h3>
-            <span>Disponível</span>
-          </div>          
-          <img class="card-banner" src="./assets/images/peugeot-2008.png" alt="Foto do modelo peugeot 2008">
-  
-          <section class="card-description">
-            <div class="card-description-group">
-              <div>
-                <img src="./assets/icons/seat.png" alt="Ícone de um assento de carro">
-                <span>5 passageiros</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/door-car.png" alt="Ícone de uma porta de carro">
-                <span>4 portas</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/air.png" alt="Ícone representando o vento">
-                <span>Ar condicionado</span>
-              </div>
-            </div>
-  
-            <div class="card-description-group">
-              <div>
-                <img src="./assets/icons/gear-stick.png" alt="Ícone de um câmbio de veículo">
-                <span>Automático</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/engine.png" alt="Ícone de um motor de veículo">
-                <span>1.6</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/suitcase.png" alt="Ícone de uma mala de viagem">
-                <span>2 malas</span>
-              </div>
-            </div>
-  
-          </section>
-  
-          <button>Reservar</button>
-        </div>
-  
-        <div class="card-content">
-          <div class="card-header card-header-available">
-            <h3>Toyota Corolla</h3>
-            <span>Disponível</span>
-          </div>
-          <img class="card-banner" src="./assets/images/corolla-2022.png" alt="Foto do modelo toyota corolla">
-  
-          <section class="card-description">
-            <div class="card-description-group">
-              <div>
-                <img src="./assets/icons/seat.png" alt="Ícone de um assento de carro">
-                <span>5 passageiros</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/door-car.png" alt="Ícone de uma porta de carro">
-                <span>4 portas</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/air.png" alt="Ícone representando o vento">
-                <span>Ar condicionado</span>
-              </div>
-            </div>
-  
-            <div class="card-description-group">
-              <div>
-                <img src="./assets/icons/gear-stick.png" alt="Ícone de um câmbio de veículo">
-                <span>Automático</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/engine.png" alt="Ícone de um motor de veículo">
-                <span>1.4</span>
-              </div>
-    
-              <div>
-                <img src="./assets/icons/suitcase.png" alt="Ícone de uma mala de viagem">
-                <span>2 malas</span>
-              </div>
-            </div>
-  
-          </section>
-  
-          <button>Reservar</button>
-        </div>
-      </section>
+      <section id="cars-card-home"></section>
 
     </section>
-    
+
     <section class="container content-home">
       <img src="./assets/images/fleet-cars.jpg" alt="Demonstração de uma frota de carros">
       <div class="content-home-description">
         <h2>Temos opções para todos os gostos</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, enim accusantium! Deleniti dolorum tempore soluta totam dicta ipsam aperiam quo assumenda, nemo ipsum temporibus id facilis consequuntur autem sed iste.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, enim accusantium! Deleniti dolorum
+          tempore soluta totam dicta ipsam aperiam quo assumenda, nemo ipsum temporibus id facilis consequuntur autem
+          sed iste.</p>
       </div>
     </section>
 
     <section class="container content-home">
       <div class="content-home-description">
         <h2>Manutenções e revisões sempre em dia</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, enim accusantium! Deleniti dolorum tempore soluta totam dicta ipsam aperiam quo assumenda, nemo ipsum temporibus id facilis consequuntur autem sed iste.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, enim accusantium! Deleniti dolorum
+          tempore soluta totam dicta ipsam aperiam quo assumenda, nemo ipsum temporibus id facilis consequuntur autem
+          sed iste.</p>
       </div>
       <img src="./assets/images/car-maintenance.jpg" alt="Homem reparando o motor do carro">
     </section>

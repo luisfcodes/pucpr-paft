@@ -23,7 +23,9 @@ document.querySelector('body').insertAdjacentHTML('afterbegin', `
           </ul>
         </nav>
 
-        <button>Login</button>
+        <button>
+          <span>User</span>
+        </button>
       </div>
 
     </div>
