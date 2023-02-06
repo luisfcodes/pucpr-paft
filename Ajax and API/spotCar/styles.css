@@ -35,7 +35,7 @@
 
 .banner-home div span {
   line-height: 1.5;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   display: block;
 }
 
@@ -87,7 +87,7 @@
   height: 250px;
   min-width: 380px;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .content-home .content-home-description {

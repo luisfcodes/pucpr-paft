@@ -101,7 +101,7 @@ async function openModal(id) {
                 <span class="modal-form-total-description">Total:</span> <span class="modal-form-total-price" id="modal-form-total-price">-</span>
               </div>
             </div>
-            <button class="modal-content-car-button">Reservar</button>
+            <button class="modal-content-car-button" id="modal-button">Reservar</button>
           </form>
         </div>
       </div>
@@ -121,7 +121,6 @@ function showTotalPrice(price){
   const totalDays = calcTotalDays(dateOne, dateTwo)
 
   if(totalDays >= 0){
-    // document.querySelector('#modal-form-total-price').textContent = `R$${(price * totalDays).toLocaleString('pt-br', {minimumFractionDigits: 2})}`
     document.querySelector('#modal-form-total-price').textContent = `${formatCurrency(price * totalDays)}`
   } else {
     document.querySelector('#modal-form-total-price').textContent = '-'

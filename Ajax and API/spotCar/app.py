@@ -176,7 +176,7 @@ def addNewReservation(id):
   return jsonify([reservation.as_dict() for reservation in reservations])
 
 @app.route("/reservations/<int:idCar>/<int:idReservation>", methods=['DELETE'])
-def deleteContact(idCar, idReservation):
+def deleteReservation(idCar, idReservation):
 
   reservation = db.get_or_404(Reservations, idReservation)
 
@@ -191,17 +191,16 @@ def deleteContact(idCar, idReservation):
   reservations = db.session.execute(db.select(Reservations).order_by(Reservations.id)).scalars()
   return jsonify([reservation.as_dict() for reservation in reservations])
 
-# @app.route("/contacts/<int:id>", methods=['PUT'])
-# def updateContact(id):
+@app.route("/reservations/<int:reservationId>", methods=['PUT'])
+def updateReservation(reservationId):
 
-#   data = request.get_json()
-#   user = db.get_or_404(Contacts, id)
+  data = request.get_json()
+  reservation = db.get_or_404(Reservations, reservationId)
   
-#   user.name = data['name']
-#   user.phone = data['number']
+  reservation.reservation = data["reservation"]
 
-#   user.verified = True
-#   db.session.commit()
+  reservation.verified = True
+  db.session.commit()
 
-#   contacts = db.session.execute(db.select(Contacts).order_by(Contacts.id)).scalars()
-#   return jsonify([contact.as_dict() for contact in contacts])
+  reservations = db.session.execute(db.select(Reservations).order_by(Reservations.id)).scalars()
+  return jsonify([reservation.as_dict() for reservation in reservations])

@@ -43,9 +43,31 @@ async function addCarReservation(id, initialDate, endDate, note) {
   }))
 }
 
-async function deleteCarReservation(carId, reservationId) {
+function deleteCarReservation(carId, reservationId) {
   fetch(`http://127.0.0.1:5000/reservations/${carId}/${reservationId}`, {
     method: 'DELETE'
+  }).then(res => res.json().then(res => {
+    console.log(res)
+  }))
+}
+
+function updateReservation(carId, reservationId, initialDate, endDate, note) {
+  fetch(`http://127.0.0.1:5000/reservations/${reservationId}`, {
+    method: 'PUT',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(
+      {
+        'reservation': {
+          'carId': carId,
+          'initialDate': initialDate,
+          'endDate': endDate,
+          'note': note
+        }
+      }
+    )
   }).then(res => res.json().then(res => {
     console.log(res)
   }))

@@ -6,13 +6,12 @@ async function loadUserPage(){
   reservationList.sort((a,b) => a.reservation.carId - b.reservation.carId)
 
   carsRenteds.forEach((car, index) => {
-
     document.querySelector('#content-home').innerHTML += `
     <div class="user-content-card">
       <div class="user-content-card-header">
         <h2>${car.brand} ${car.model}</h2>
         <section class="user-content-card-description-options">
-          <button class="user-content-card-description-options-edit">Editar</button>
+          <button class="user-content-card-description-options-edit" onclick="handleOpenModalUserPage(${car.id}, ${car.price}, ${reservationList[index].id}, '${reservationList[index].reservation.initialDate}', '${reservationList[index].reservation.endDate}', '${reservationList[index].reservation.note}')">Editar</button>
           <button class="user-content-card-description-options-delete" onclick="deleteCarReservation(${car.id}, ${reservationList[index].id})">Deletar</button>
        </section>
       </div>
@@ -86,3 +85,34 @@ async function loadUserPage(){
 }
 
 loadUserPage()
+
+async function handleOpenModalUserPage(carId, price, reservationId, initialDate, endDate, note){
+  await openModal(carId)
+
+  let dateOne = new Date(initialDate)
+  dateOne.setDate(dateOne.getDate() + 1)
+  document.querySelector('#initial-date').value = new Intl.DateTimeFormat('fr-CA').format(dateOne)
+
+  let dateTwo = new Date(endDate)
+  dateTwo.setDate(dateTwo.getDate() + 1)
+  document.querySelector('#end-date').value = new Intl.DateTimeFormat('fr-CA').format(dateTwo)
+
+  document.querySelector('#note').textContent = note
+
+  showTotalPrice(price)
+
+  document.querySelector('#modal-button').textContent = 'Atualizar Reserva'
+
+  document.querySelector('form').setAttribute('onsubmit', `handleSubmitModalUserPage(event, ${carId}, ${reservationId})`)
+}
+
+function handleSubmitModalUserPage(event, carId, reservationId){
+  event.preventDefault()
+  const initialDate = new Date(document.querySelector('#initial-date').value);
+  const endDate = new Date(document.querySelector('#end-date').value);
+  const note = document.querySelector('#note').value
+
+  if(calcTotalDays(initialDate, endDate) > 0 && calcTotalDays(new Date(), initialDate) > 0){
+    updateReservation(carId, reservationId, initialDate, endDate, note)
+  }
+}
