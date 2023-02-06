@@ -16,6 +16,8 @@
   --green-600: #16a34a;
 
   --red-600: #dc2626;
+
+  --orange-600: #ea580c;
 }
 
 html {
@@ -78,4 +80,8 @@ main {
 
 .hidden {
   display: none;
+}
+
+.not-allowed {
+  cursor: not-allowed;
 }

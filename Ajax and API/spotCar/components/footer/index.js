@@ -5,15 +5,15 @@ document.querySelector('body').insertAdjacentHTML('beforeend', `
     <h3>Institucional</h3>
     <ul>
       <li>
-        <img src="../assets/icons/user.png" alt="Ícone de usuário">
+        <img src="../../assets/icons/user.png" alt="Ícone de usuário">
         <span>Clientes</span>
       </li>
       <li>
-        <img src="../assets/icons/info.png" alt="Ícone redondo com a letra i no meio, simbolizando informação">
+        <img src="../../assets/icons/info.png" alt="Ícone redondo com a letra i no meio, simbolizando informação">
         <span>Sobre nós</span>
       </li>
       <li>
-        <img src="../assets/icons/lawyer.png" alt="Ícone de usuário com uma maleta de negócios na frente">
+        <img src="../../assets/icons/lawyer.png" alt="Ícone de usuário com uma maleta de negócios na frente">
         <span>Vagas</span>
       </li>
     </ul>
@@ -23,19 +23,19 @@ document.querySelector('body').insertAdjacentHTML('beforeend', `
     <h3>Soluções</h3>
     <ul>
       <li>
-        <img src="../assets/icons/car.png" alt="Ícone de um carro com duas pessoas">
+        <img src="../../assets/icons/car.png" alt="Ícone de um carro com duas pessoas">
         <span>Aluguel de carros</span>
       </li>
       <li>
-        <img src="../assets/icons/strategy.png" alt="Ícone de um mapa, representando uma estratégia">
+        <img src="../../assets/icons/strategy.png" alt="Ícone de um mapa, representando uma estratégia">
         <span>Planos</span>
       </li>
       <li>
-        <img src="../assets/icons/discount.png" alt="Ícone de um círculo com porcentagem no meio, representando promoção de preço">
+        <img src="../../assets/icons/discount.png" alt="Ícone de um círculo com porcentagem no meio, representando promoção de preço">
         <span>Ofertas</span>
       </li>
       <li>
-        <img src="../assets/icons/store.png" alt="Ícone de uma fachada de loja">
+        <img src="../../assets/icons/store.png" alt="Ícone de uma fachada de loja">
         <span>Agências</span>
       </li>
     </ul>
@@ -45,19 +45,19 @@ document.querySelector('body').insertAdjacentHTML('beforeend', `
     <h3>Redes Sociais</h3>
     <ul>
       <li>
-        <img src="../assets/icons/instagram.png" alt="Ícone do Instagram">
+        <img src="../../assets/icons/instagram.png" alt="Ícone do Instagram">
         <span>Instagram</span>
       </li>
       <li>
-        <img src="../assets/icons/facebook.png" alt="Ícone do Facebook">
+        <img src="../../assets/icons/facebook.png" alt="Ícone do Facebook">
         <span>Facebook</span>
       </li>
       <li>
-        <img src="../assets/icons/youtube.png" alt="Ícone do Youtube">
+        <img src="../../assets/icons/youtube.png" alt="Ícone do Youtube">
         <span>Youtube</span>
       </li>
       <li>
-        <img src="../assets/icons/linkedin.png" alt="Ícone do Linkedin">
+        <img src="../../assets/icons/linkedin.png" alt="Ícone do Linkedin">
         <span>Linkedin</span>
       </li>
     </ul>

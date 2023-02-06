@@ -2,7 +2,7 @@ document.querySelector('body').insertAdjacentHTML('afterbegin', `
   <header>
     <div class="container">
       <a href="/">
-        <img src="../assets/logo.svg" alt="logo">
+        <img src="../../assets/logo.svg" alt="logo">
       </a>
 
       <div class="header-navigation">
@@ -12,7 +12,7 @@ document.querySelector('body').insertAdjacentHTML('afterbegin', `
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="./pages/cars.html">Carros</a>
+              <a href="../../pages/cars/">Carros</a>
             </li>
             <li>
               <a href="#">Clientes</a>
@@ -23,9 +23,11 @@ document.querySelector('body').insertAdjacentHTML('afterbegin', `
           </ul>
         </nav>
 
-        <button>
-          <span>User</span>
-        </button>
+        <a href="../../pages/user/">
+          <button>
+            <span>User</span>
+          </button>
+        </a>
       </div>
 
     </div>

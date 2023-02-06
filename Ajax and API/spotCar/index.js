@@ -4,3 +4,12 @@ async function loadHomePage(){
 }
 
 loadHomePage()
+
+async function teste(){
+  const teste = await getAllReservations()
+  const teste2 = await getAllCars()
+  console.log(teste)
+  console.log(teste2)
+}
+
+teste()
