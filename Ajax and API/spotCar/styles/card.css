@@ -1,6 +1,7 @@
 .card-container section {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -107,3 +108,13 @@
 .card-header-rented button {
   cursor: not-allowed;
 }
+
+/* Medias Queries */
+
+@media only screen and (max-width: 425px)  {
+  .card-container section {
+    flex-direction: column;
+  }
+}
+
+

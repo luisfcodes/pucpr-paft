@@ -50,13 +50,17 @@ header .container nav ul li a:hover::after{
   left: 0;
 }
 
+.header-btn-mobile {
+  display: none;
+}
+
 .header-navigation {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.header-navigation button {
+.header-navigation .header-btn-user {
   display: flex;
   align-items: center;
   gap: .8rem;
@@ -73,12 +77,12 @@ header .container nav ul li a:hover::after{
   color: var(--gray-700);
 }
 
-.header-navigation button:hover {
+.header-navigation .header-btn-user:hover {
   background-color: var(--blue-900);
   color: var(--white);
 }
 
-.header-navigation button::before {
+.header-navigation .header-btn-user::before {
   content: '';
   width: 25px;
   height: 25px;
@@ -87,10 +91,58 @@ header .container nav ul li a:hover::after{
   transition: all .4s ease-in-out;
 }
 
-.header-navigation button:hover::before {
+.header-navigation .header-btn-user:hover::before {
   background-image: url('../../assets/icons/user.png');
 }
 
-.header-navigation button img {
+.header-navigation .header-btn-user img {
   width: 25px;
+}
+
+/* Medias Queries */
+
+@media only screen and (max-width: 768px)  {
+  .header-btn-mobile {
+    display: block;
+    border: 0;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+    background-color: var(--white);
+    font-size: 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    color: var(--blue-900);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    outline-color: var(--gray-300);
+  }
+
+  .header-navigation{
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: -1.5rem;
+    background-color: var(--blue-900);
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0 0 4px 4px;
+  }
+
+  .header-navigation ul{
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  header .container nav ul li a {
+    color: var(--white);
+  }
+
+  .header-navigation.active {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 425px)  {
+  .header-navigation{
+    right: -.58rem;
+  }
 }

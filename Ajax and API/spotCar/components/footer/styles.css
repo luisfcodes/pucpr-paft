@@ -4,7 +4,6 @@ footer {
 
 footer .container {
   display: flex;
-  
   justify-content: space-between;
   padding: 2rem;
   color: var(--white);
@@ -40,4 +39,23 @@ footer .container {
 
 .footer-content ul li:hover {
   color: var(--gray-100);
+}
+
+/* Medias Queries */
+
+@media only screen and (max-width: 768px)  {
+  .footer-content iframe {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 425px)  {
+  .footer-content:last-child {
+    display: none;
+  }
+
+  footer .container {
+    padding: 2rem 1rem;
+  }
+  
 }

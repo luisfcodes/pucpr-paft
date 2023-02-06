@@ -5,8 +5,9 @@ document.querySelector('body').insertAdjacentHTML('afterbegin', `
         <img src="../../assets/logo.svg" alt="logo">
       </a>
 
+      <button id="btn-mobile" class="header-btn-mobile" onclick="toogleMenu()">Menu</button>
       <div class="header-navigation">
-        <nav>
+        <nav class="header-navigation-nav">
           <ul>
             <li>
               <a href="/">Home</a>
@@ -23,8 +24,8 @@ document.querySelector('body').insertAdjacentHTML('afterbegin', `
           </ul>
         </nav>
 
-        <a href="../../pages/user/">
-          <button>
+        <a href="../../pages/user/" id="header-navigation-user" class="header-navigation-user">
+          <button class="header-btn-user">
             <span>User</span>
           </button>
         </a>
@@ -33,3 +34,10 @@ document.querySelector('body').insertAdjacentHTML('afterbegin', `
     </div>
   </header>
 `)
+
+function toogleMenu(){
+  const nav = document.querySelector('.header-navigation')
+  const btnMobile = document.querySelector('#btn-mobile')
+  
+  nav.classList.toggle('active')
+}

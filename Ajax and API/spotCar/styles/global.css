@@ -85,3 +85,31 @@ main {
 .not-allowed {
   cursor: not-allowed;
 }
+
+/* Medias Queries */
+
+@media only screen and (max-width: 1200px)  {
+  .container{
+    max-width: 960px;
+  }
+}
+
+@media only screen and (max-width: 768px)  {
+  html, body {
+    font-size: 15px;
+  }
+
+  .container{
+    max-width: 700px;
+  }
+}
+
+@media only screen and (max-width: 425px)  {
+  html, body {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 380px;
+  }
+}
