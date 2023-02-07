@@ -133,7 +133,7 @@ function handleSubmit(event, id){
   const dateTwo = new Date(document.querySelector('#end-date').value);
   const note = document.querySelector('#note').value
 
-  if(calcTotalDays(dateOne, dateTwo) > 0 && calcTotalDays(new Date(), dateOne) > 0){
+  if(calcTotalDays(dateOne, dateTwo) > 0 && calcTotalDays(new Date(), dateOne) >= 0){
     addCarReservation(id, dateOne, dateTwo, note)
   }
 }
