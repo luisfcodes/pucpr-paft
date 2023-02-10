@@ -12,8 +12,8 @@ function showProducts() {
         </div>
         <div class="list-item-delete">
             <span>${element.quantity} ${element.type_unit}</span>
-            <button>
-                <img src="./images/trash-icon.svg" alt="Ícone de lixeira">
+            <button onclick="removeProduct(${element.id})">
+                <img src="./images/trash-icon.png" alt="Ícone de lixeira">
             </button>
         </div>
     </li>

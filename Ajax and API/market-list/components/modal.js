@@ -4,19 +4,21 @@ function showModal() {
   modalElement.classList.remove('disabled')
   modalElement.innerHTML = `
     <section class="modal-content">
-    <button class="modal-button-close" onclick="closeModal()">X</button>
+    <button class="modal-button-close" onclick="closeModal()">
+      <img src="./images/close-icon.png" alt="Ícone de fechar">
+    </button>
     <span class="modal-title">Adicionar novo produto</span>
 
     <form>
       <div class="modal-input">
         <label for="name">Nome</label>
-        <input type="text" id="name">
+        <input type="text" placeholder="Banana" id="name">
       </div>
 
       <div class="modal-inputs-group">
         <div class="modal-input">
           <label for="quantity">Quantidade</label>
-          <input type="number" id="quantity" class="modal-input-quantity">
+          <input type="number" id="quantity" placeholder="2" class="modal-input-quantity">
         </div>
 
         <div class="modal-input">

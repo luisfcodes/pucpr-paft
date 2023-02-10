@@ -1,4 +1,6 @@
 header h1{
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }

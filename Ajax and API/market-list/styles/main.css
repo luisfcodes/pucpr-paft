@@ -26,10 +26,12 @@ main {
 }
 
 .main-search-and-product button {
-  background-color: #22c55e;
-  color: var(--gray-900);
-  font-size: .9rem;
-  transition: all .2s;
+  background-color: var(--green-600);
+  color: var(--white);
+  font-size: 1rem;
+  transition: all .4s ease-in-out;
+  font-weight: 600;
+  border: none;
 }
 
 .main-search-and-product button:hover {
@@ -37,9 +39,7 @@ main {
 }
 
 .product-list {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
+  margin-top:2rem;
 }
 
 .product-list ul {
@@ -47,10 +47,11 @@ main {
   display: flex;
   flex-direction: column;
   gap: .4rem;
-  background-color: var(--gray-100);
+  background-color: var(--gray-800);
   color: var(--gray-900);
   border-radius: 4px;
   padding: 1rem;
+  box-shadow: 0px 0px 8px 3px rgba(0,0,0,.5);
 }
 
 .product-list li {
@@ -58,8 +59,10 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 0.4rem;
-  background-color: var(--gray-200);
+  background-color: var(--gray-900);
+  color: var(--white);
   border-radius: 4px;
+  letter-spacing: 1.5px;
 }
 
 .list-item-title,
@@ -70,27 +73,24 @@ main {
 }
 
 .list-item-delete span {
-  background-color: #f97316;
+  background-color: var(--orange-600);
   min-width: 100px;
   text-align: center;
-  color: var(--gray-100);
-  padding: 0.2rem 1rem;
+  color: var(--white);
+  padding: 0.3rem .5rem;
   border-radius: 4px;
+  font-weight: 500;
 }
 
 .list-item-delete button {
   border: none;
-  background-color: #fda4af;
-  padding: .1rem;
+  background-color: var(--red-600);
+  padding: .125rem .25rem;
   border-radius: 4px;
+  transition: all .2s ease-in-out;
+  outline-color: var(--red-600);
 }
 
 .list-item-delete button:hover {
-  background-color: #fb7185;
-}
-
-
-.list-item-delete button img {
-  width: 25px;
-  height: 20px;
+  filter: brightness(.9);
 }
