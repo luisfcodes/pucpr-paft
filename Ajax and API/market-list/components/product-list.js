@@ -1,14 +1,14 @@
 const productList = document.querySelector('.product-list ul')
 
-function showProducts() {
+function showProducts(list) {
   productList.innerHTML = ''
-  products.forEach(element => {
+  list.forEach(element => {
 
     productList.innerHTML += `
     <li>
         <div class="list-item-title">
-            <input type="checkbox" />
-            <span>${element.name}</span>
+            <input type="checkbox" id="item-checkbox-${element.id}" onclick="checkItem(${element.id})"/>
+            <span id="item-name-${element.id}">${element.name}</span>
         </div>
         <div class="list-item-delete">
             <span>${element.quantity} ${element.type_unit}</span>
@@ -21,4 +21,4 @@ function showProducts() {
   })
 }
 
-showProducts()
+showProducts(products)

@@ -5,15 +5,19 @@ function addProduct(event){
   const quantityProduct = document.querySelector('#quantity')
   const unitTypeProduct = document.querySelector('#unit_type')
 
-  products.push({
-    id: products[products.length - 1].id +1,
-    name: nameProduct.value,
-    quantity: Number(quantityProduct.value),
-    type_unit: unitTypeProduct.value,
-  })
+  if(unitTypeProduct.value !== "0"){
+    products.push({
+      id: products[products.length - 1].id +1,
+      name: nameProduct.value,
+      quantity: Number(quantityProduct.value),
+      type_unit: unitTypeProduct.value,
+    })
 
-  closeModal()
-  showProducts()
+    closeModal()
+    showProducts(products)
+  } else {
+    alert('Selecione o tipo de medida!')
+  }
 }
 
 function removeProduct(id){
@@ -22,5 +26,24 @@ function removeProduct(id){
       delete products[index]
     }
   })
-  showProducts()
+  showProducts(products)
+}
+
+function checkItem(id){
+  const checkboxElement = document.querySelector(`#item-checkbox-${id}`).checked
+  const nameTaskElement = document.querySelector(`#item-name-${id}`)
+
+  if(checkboxElement){
+    nameTaskElement.classList.add('checked')
+  } else {
+    nameTaskElement.classList.remove('checked')
+  }
+}
+
+function searchItem(){
+  const searchElement = document.querySelector('#search')
+  
+  const productsFiltered = products.filter(item => item.name.toLowerCase().includes(searchElement.value.toLowerCase()))
+
+  showProducts(productsFiltered)
 }

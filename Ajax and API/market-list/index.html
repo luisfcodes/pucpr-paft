@@ -6,8 +6,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="./styles/global.css">
@@ -36,7 +36,7 @@
   <main>
 
     <div class="main-search-and-product">
-      <input type="text" id="search" placeholder="Pesquise um item da lista">
+      <input type="text" id="search" oninput="searchItem()" placeholder="Pesquise um item da lista">
       <button onclick="showModal()">+ Novo Produto</button>
     </div>
 
