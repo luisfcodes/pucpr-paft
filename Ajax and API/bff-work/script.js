@@ -7,7 +7,7 @@ async function handleSubmit(event){
   userData = await userData.json()
 
   let pokedexData = await fetch(`http://127.0.0.1:5000/userData?username=${user}`)
-  userData = await pokedexData.json()
+  pokedexData = await pokedexData.json()
 
-  console.log(userData)
+  window.location.href = `http://127.0.0.1:5000/user.html?username=${user}`
 }

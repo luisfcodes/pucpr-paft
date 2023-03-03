@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+body, button, input {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  height: 100%;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+aside {
+  background-color: #161b22;
+  height: 100%;
+  padding: 1rem;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+aside img {
+  margin-top: 5rem;
+  width: 200px;
+  border-radius: 50%;
+}
+
+aside h1 {
+  letter-spacing: 1px;
+}
+
+aside p {
+  line-height: 1.5rem;
+}
+
+.container {
+  padding: 4rem;
+}
+
+.pokedex-list {
+  margin-top: 1rem;
+}
+
+.pokedex-list-item {
+  background-color: #161b22;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.pokedex-list-item:hover {
+  transform: scale(1.1);
+}
+
+.pokedex-list-item img {
+  width: 150px;
+}
+
+.pokedex-list-item h3 {
+  letter-spacing: 1px;
+  margin-top: .5rem;
+}

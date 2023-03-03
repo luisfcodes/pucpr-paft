@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 from flask_cors import CORS
 import requests
 
@@ -26,8 +26,19 @@ def getUserData():
     jsonRickAndMortyAPI = responseRickAndMortyAPI.json()
 
     response = {'pokedex': jsonPokeAPI, 'rickAndMorty': jsonRickAndMortyAPI}
+
     return response
 
+@app.route('/user.html')
+def showUserPage():
+    return render_template('user.html', user = [])
+    # userGithub = getUser()
+    # userData = getUserData()
 
-
+    # return render_template('user.html', user = {
+    #     'user': userGithub,
+    #     'pokedex': userData['pokedex'],
+    #     'rickAndMorty': userData['rickAndMorty'],
+    # })
+    
 app.run(debug=True)

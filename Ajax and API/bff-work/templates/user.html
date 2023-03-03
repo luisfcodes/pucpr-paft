@@ -1,0 +1,41 @@
+{% extends 'base.html'%}
+{% block head%}
+  {# {{ user['user']['name'] }} #}
+  Teste 
+{% endblock %}
+
+{% block body %}
+
+{# <main>
+  <aside>
+    <img src="{{ user['user']['avatar_url'] }}" alt="">
+    <h1>{{ user['user']['name'] }}</h1>
+
+    <p>{{ user['user']['bio'] }}</p>
+  </aside>
+</main> #}
+
+<main>
+  <aside>
+    <img src="https://avatars.githubusercontent.com/u/12867589?v=4" alt="">
+    <h1>Luis Fernando</h1>
+
+    <p>An eternal student of technology, focused on solving problems in the front-end universe.</p>
+  </aside>
+
+  <div class="container">
+    <section>
+      <h2>Sua pokedex</h2>
+
+      <ul class="pokedex-list">
+        <li class="pokedex-list-item">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="">
+          <h3>Bulbasaur</h3>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+{% endblock %}
