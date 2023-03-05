@@ -1,6 +1,7 @@
 async function handleSubmit(event){
   event.preventDefault()
-
+  
+  document.querySelector('#button-search').setAttribute('disabled', '')
   document.querySelector('#loader').classList.remove('hidden')
   document.querySelector('#span-button-search').classList.add('hidden')
   
@@ -69,8 +70,10 @@ async function handleSubmit(event){
       throw new Error
     }
   } catch (err){
+    document.querySelector('#button-search').removeAttribute('disabled', '')
     document.querySelector('#loader').classList.add('hidden')
     document.querySelector('#span-button-search').classList.remove('hidden')
+
     console.log(err)
   }
 }

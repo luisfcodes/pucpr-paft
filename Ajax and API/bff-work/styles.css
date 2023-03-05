@@ -52,6 +52,11 @@ button:hover {
   filter: brightness(.9);
 }
 
+button:disabled,
+button[disabled]{
+  cursor: not-allowed;
+}
+
 input {
   background-color: #161b22;
   border: none;
