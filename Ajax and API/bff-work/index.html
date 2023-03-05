@@ -7,9 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./styles.css">
   <script src="./script.js" defer></script>
-  <title>Coleção de Filmes</title>
+  <title>BFF Application | Home</title>
 </head>
 <body>
   <main>
@@ -17,8 +18,32 @@
 
     <form onsubmit="handleSubmit(event)">
       <input type="text" id="username" placeholder="user" required>
-      <button>Buscar</button>
+      <button>
+        <span id="span-button-search">Buscar</span>
+        <div id="loader" class="loader-ring hidden">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </button>
+      
     </form>
+
+    <section>
+      <div class="hidden warning" id="div-user-github">
+        <img src="./images/check.svg" alt="Ícone de okay">
+        <span id="span-user-github"></span>
+      </div>
+      <div class="hidden" id="div-pokedex">
+        <img src="./images/check.svg" alt="Ícone de okay">
+        <span id="span-pokedex"></span>
+      </div>
+      <div class="hidden" id="div-rickAndMorty">
+        <img src="./images/check.svg" alt="Ícone de okay">
+        <span id="span-rickAndMorty"></span>
+      </div>
+    </section>
   </main>
 </body>
 </html>

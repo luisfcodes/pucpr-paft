@@ -15,7 +15,6 @@ body, button, input {
 }
 
 main {
-  height: 100%;
   display: flex;
 }
 
@@ -25,7 +24,7 @@ li {
 
 aside {
   background-color: #161b22;
-  height: 100%;
+  min-height: 100%;
   padding: 1rem;
   max-width: 300px;
   display: flex;
@@ -49,30 +48,43 @@ aside p {
 }
 
 .container {
-  padding: 4rem;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
-.pokedex-list {
+.list {
   margin-top: 1rem;
+  display: flex;
+  
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.pokedex-list-item {
+.list-item {
   background-color: #161b22;
   padding: 1rem;
   border-radius: 8px;
   cursor: pointer;
   transition: all .4s ease-in-out;
+  max-width: 200px;
 }
 
-.pokedex-list-item:hover {
+.list-item:hover {
   transform: scale(1.1);
 }
 
-.pokedex-list-item img {
+.list-item img {
   width: 150px;
+  height: 150px;
 }
 
-.pokedex-list-item h3 {
+.list-item h3 {
   letter-spacing: 1px;
   margin-top: .5rem;
+}
+
+.rick-and-morty img{
+  border-radius: 4px;
 }

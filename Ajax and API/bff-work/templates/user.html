@@ -1,7 +1,6 @@
 {% extends 'base.html'%}
 {% block head%}
-  {# {{ user['user']['name'] }} #}
-  Teste 
+  Home | {{ user['user']['name'] }}
 {% endblock %}
 
 {% block body %}
@@ -17,22 +16,37 @@
 
 <main>
   <aside>
-    <img src="https://avatars.githubusercontent.com/u/12867589?v=4" alt="">
-    <h1>Luis Fernando</h1>
+    <img src="{{ user['user']['avatar_url'] }}" alt="Imagem pessoal">
+    <h1>{{ user['user']['name'] }}</h1>
 
-    <p>An eternal student of technology, focused on solving problems in the front-end universe.</p>
+    <p>{{ user['user']['bio'] }}</p>
   </aside>
 
   <div class="container">
     <section>
       <h2>Sua pokedex</h2>
 
-      <ul class="pokedex-list">
-        <li class="pokedex-list-item">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="">
-          <h3>Bulbasaur</h3>
-        </li>
-      </ul>
+      <ul class="list">
+        {% for pokemon in user['pokedex'] %}
+          <li class="list-item">
+            <img src="{{ pokemon.imageUrl }}" alt="">
+            <h3>{{ pokemon.name }}</h3>
+          </li>
+        {% endfor %}
+      </ul>      
+    </section>
+
+    <section>
+      <h2>Personagens da sua série favorita (Rick And Morty)</h2>
+
+      <ul class="list">
+        {% for character in user['rickAndMorty'] %}
+          <li class="list-item rick-and-morty">
+            <img src="{{ character.imageUrl }}" alt="">
+            <h3>{{ character.name }}</h3>
+          </li>
+        {% endfor %}
+      </ul> 
     </section>
 
   </div>
